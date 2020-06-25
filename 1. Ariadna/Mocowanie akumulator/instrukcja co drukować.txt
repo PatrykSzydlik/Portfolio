@@ -1,0 +1,4 @@
+Wydrukować najpierw model final cela.
+Upewnić się, że ogniwo w obudowie 18650 na pewno pasuje.
+Jeśli nie to zmienić promień w szkicu 1 modelu final cela, a następnie zaktualizować model final cela oraz model 4x2 mocowanie.
+Gdy wszystko jest w porządku można wydrukować model 4x2 mocowanie w ilości 4 sztuk.

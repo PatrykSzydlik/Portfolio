@@ -1,0 +1,9 @@
+Wydrukować najpierw model slot na złącze.
+Sprawdzić czy złącze od baterii pasuje do otworu w modelu.
+Jeśli nie to drobne poprawki zaaplikować w modelu slot na baterie.
+Następnie po sprawdzeniu modelu przez kogoś inteligentnego, aby skontrolował czy wszystkie wymiary są prawidłowe, można wydrukować slot na baterie.  
+
+
+[Wyjaśnienie]
+
+W modelu jeden otwór na scianie bocznej oraz środkowy otwór [w bocznej linii gdzie są 3 otwory na profilu] mają służyć jako ewentualne miejsce zamocowania pasa z rzepami gdybyśmy chcieli dodatkowo stabilizować pakiet baterii w slocie.   

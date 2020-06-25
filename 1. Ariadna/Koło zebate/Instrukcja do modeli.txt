@@ -1,0 +1,44 @@
+Model wzór służy do tworzenia modeli kół o dowolnie dobranych parametrach.
+
+[EDYCJA SZKICU]
+
+Po otwarciu wzoru od razu należy zapisać nowy model jako docelowy plik.
+Następnie można wejść w zakładkę zarządzanie->parametry i tam edytować wybrane wartości:
+
+ -   ilość zębów - nie trzeba tłumaczyć, wzrost wartości powoduje wzrost promienia koła 
+     [zakres minimum 9]
+
+ -   wys_zeba - wartość do zbadania na podstawie modelu i jego dopasowania z gąsienicą, 
+     według moich prób 4,3 mm najlepiej spełnia swoją funkcję 
+     [zakres do 4,5mm]
+
+ -   kat_zeba - zmniejszenie wartości wpływa na zmniejszenie luzów na połączeniu gąsienica-koło 
+     ale nie należy z tym przesadzać 
+     [zakres 137 - 165]
+
+Po każdej edycji parametrów polecam włączyć i wyłączyć edycję szkicu, to daje 100%  pewności, że wszystko się zaktualizowało.
+Parametry stałe tylko do wglądu:
+
+ - kat 360 - tylko do obliczeń
+
+ - dl_ogniwa 8,3mm - wartość do dokładniejszego zbadania jeśli ktoś ma ochotę ale myślę, że dokładność 
+   z jaką wyznaczałem tą wartość jest wystarczająca. Jest to odległość między dwoma trzpieniami w gąsienicy
+
+ - dl_przeskoku - wzór wyprowadzony z prostej geometrii, odległość cięciwy między punktami w których ogniwa gąsienicy będą dotykać się do koła
+
+[TWORZENIE BRYŁY]
+
+ Aby naprawić błędne połączenia w szyku trzeba użyć doktora szkicu.
+ Poniższe operacje pozwolą utworzyć model ale nie będzie można go już kontrolować poprzez zmianę parametrów. 
+
+ Wchodzimy w edycje szkicu, klikamy ppm i wybieramy doktor szkicu.
+ Następnie wybieramy "diagnozuj szkic" , wykonujemy to dla wszystkich testów diagnostycznych, które się wyświetlą, klikamy 'ok'.
+ Kolejno klikamy dalej, dalej, zakończ. Teraz rozpocznie się łączenie punktów nakładających się. 
+ My musimy jedynie zaakceptować każde z nowych połączeń klikając "tak", a na koncu zakończ szkic.
+
+ Teraz model można normalnie utworzyć poprzez narzędzie 'wyciągnięcie proste'. Grubość tarczy koła to 3,5 mm .
+
+[DODAWANIE OTWORÓW]
+
+ Wykorzystujemy do tego szkic z otworami. 
+ Tworzymy w centrum koła otwór o phi 9mm  oraz cztery otwory na śruby o phi 3,3 mm.

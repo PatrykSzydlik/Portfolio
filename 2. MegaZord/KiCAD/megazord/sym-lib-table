@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name New_Library)(type Legacy)(uri ${KIPRJMOD}/New_Library.lib)(options "")(descr ""))
+  (lib (name gp2y0d815z0f)(type Legacy)(uri /home/p_szydlik/Pulpit/Megazord/gp2y0d815z0f.lib)(options "")(descr ""))
+  (lib (name NEW)(type Legacy)(uri /home/p_szydlik/Pulpit/Megazord/NEW.lib)(options "")(descr ""))
+  (lib (name megazord-rescue)(type Legacy)(uri ${KIPRJMOD}/megazord-rescue.lib)(options "")(descr ""))
+)
