@@ -1,0 +1,4 @@
+
+ Podaj rozmiar planszy:
+
+ Podaj długość wygrywającą:

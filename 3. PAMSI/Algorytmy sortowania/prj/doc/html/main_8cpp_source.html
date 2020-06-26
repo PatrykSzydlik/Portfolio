@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Algorytmy sortujące: Plik źródłowy main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="sorting_alhorithms_logo2.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Algorytmy sortujące
+   &#160;<span id="projectnumber">Patryk Szydlik</span>
+   </div>
+   <div id="projectbrief">Algorytmy sortowania szybkiego, przez scalanie oraz introspektywnego</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('main_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span> </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="quicksort_8hh.html">quicksort.hh</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="random__data__generation_8hh.html">random_data_generation.hh</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mergesort_8hh.html">mergesort.hh</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="insertionsort_8hh.html">insertionsort.hh</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="heapsort_8hh.html">heapsort.hh</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="introsort_8hh.html">introsort.hh</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="time__measurements_8hh.html">time_measurements.hh</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   18</a></span>&#160; <span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> data_size=100000;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">float</span> percent_sorted=0.0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> bottom_limit=-100;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> top_limit=100;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> introsort_depth_limit=33;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> repetitions=100;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classtime__measure.html">time_measure</a> data_generation_time;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classtime__measure.html">time_measure</a> quicksort_time;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classtime__measure.html">time_measure</a> mergesort_time;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classtime__measure.html">time_measure</a> introsort_time;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> data_generation_status=0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> quicksort_status=0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> mergesort_status=0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> introsort_status=0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;   </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=1;i&lt;=repetitions;i++){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> * quicksort_data;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;\n Repetition number &quot;</span>&lt;&lt;i&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">auto</span> start0 = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="random__data__generation_8hh.html#a04fa5c2266c0e4217d928e7910651541">generate_test_data</a>(&amp;quicksort_data,data_size,percent_sorted);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//generate_test_data(&amp;quicksort_data,data_size,percent_sorted,bottom_limit,top_limit);</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> * mergesort_data=<span class="keyword">new</span> <span class="keywordtype">int</span>[data_size];</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;data_size;i++){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      mergesort_data[i]=quicksort_data[i];</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> * introsort_data=<span class="keyword">new</span> <span class="keywordtype">int</span>[data_size];</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;data_size;i++){</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      introsort_data[i]=quicksort_data[i];</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">    int * insertionsort_data=new int[data_size];</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">    for(int i=0;i&lt;data_size;i++){</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">      insertionsort_data[i]=quicksort_data[i];</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    int * heapsort_data=new int[data_size];</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">    for(int i=0;i&lt;data_size;i++){</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">      heapsort_data[i]=quicksort_data[i];</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">auto</span> stop0 = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">auto</span> duration0 = std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(stop0 - start0); </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::cout &lt;&lt;<span class="stringliteral">&quot;\n     Data generation time: &quot;</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::cout &lt;&lt; duration0.count() &lt;&lt; <span class="stringliteral">&quot; usec \n&quot;</span>; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    data_generation_time.<a class="code" href="classtime__measure.html#ab90518591477f6af32d2dbd31c950764">add_useconds</a>(duration0.count());</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;\n          Data status before sorting: &quot;</span>&lt;&lt;<a class="code" href="random__data__generation_8hh.html#ac07417b71e50685ef8232edc5d7b308c">check_if_sorted</a>(quicksort_data,data_size)&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    data_generation_status+=<a class="code" href="random__data__generation_8hh.html#ac07417b71e50685ef8232edc5d7b308c">check_if_sorted</a>(quicksort_data,data_size);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">    std::cout&lt;&lt;&quot;\nData: &quot;;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">    for(int i=0;i&lt;=data_size-1;i++){</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">      std::cout&lt;&lt;quicksort_data[i];</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">      if(i!=data_size-1){std::cout&lt;&lt;&quot; , &quot;;}</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">    std::cout&lt;&lt;&quot;\nSize of data: &quot;&lt;&lt;data_size&lt;&lt;&quot;\n&quot;;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;   </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// Testy sortowania szybkiego, przez scalanie i introspektywnego</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::cout &lt;&lt;<span class="stringliteral">&quot;\n     Quicksort execution time: &quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">auto</span> start = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="quicksort_8hh.html#aee21d40dc913b95fe7fcb6f70ed1c910">quicksort</a>(quicksort_data,0,data_size-1);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">auto</span> stop = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">auto</span> duration = std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(stop - start); </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::cout &lt;&lt; duration.count() &lt;&lt; <span class="stringliteral">&quot; usec \n&quot;</span>; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;\n          Data status after quicksort: &quot;</span>&lt;&lt;<a class="code" href="random__data__generation_8hh.html#ac07417b71e50685ef8232edc5d7b308c">check_if_sorted</a>(quicksort_data,data_size)&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    quicksort_status+=<a class="code" href="random__data__generation_8hh.html#ac07417b71e50685ef8232edc5d7b308c">check_if_sorted</a>(quicksort_data,data_size);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    quicksort_time.<a class="code" href="classtime__measure.html#ab90518591477f6af32d2dbd31c950764">add_useconds</a>(duration.count());</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::cout &lt;&lt;<span class="stringliteral">&quot;\n     Mergesort execution time: &quot;</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">auto</span> start2 = std::chrono::high_resolution_clock::now(); </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="mergesort_8hh.html#acbf2e00c5a889d0e2c1f52d77bc587d7">mergesort</a>(mergesort_data,0,data_size-1);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">auto</span> stop2 = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">auto</span> duration2 = std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(stop2 - start2); </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    std::cout &lt;&lt; duration2.count() &lt;&lt; <span class="stringliteral">&quot; usec \n&quot;</span>; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;\n          Data status after mergesort: &quot;</span>&lt;&lt;<a class="code" href="random__data__generation_8hh.html#ac07417b71e50685ef8232edc5d7b308c">check_if_sorted</a>(mergesort_data,data_size)&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    mergesort_status+=<a class="code" href="random__data__generation_8hh.html#ac07417b71e50685ef8232edc5d7b308c">check_if_sorted</a>(mergesort_data,data_size);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    mergesort_time.<a class="code" href="classtime__measure.html#ab90518591477f6af32d2dbd31c950764">add_useconds</a>(duration2.count());</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::cout &lt;&lt;<span class="stringliteral">&quot;\n     Introsort execution time: &quot;</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">auto</span> start3 = std::chrono::high_resolution_clock::now(); </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="introsort_8hh.html#af78f0c11d757c8fb75de871179e47e71">introsort</a>(introsort_data,0,data_size-1,introsort_depth_limit);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">auto</span> stop3 = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">auto</span> duration3 = std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(stop3 - start3); </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::cout &lt;&lt; duration3.count() &lt;&lt; <span class="stringliteral">&quot; usec \n&quot;</span>; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;\n          Data status after introsort: &quot;</span>&lt;&lt;<a class="code" href="random__data__generation_8hh.html#ac07417b71e50685ef8232edc5d7b308c">check_if_sorted</a>(introsort_data,data_size)&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    introsort_status+=<a class="code" href="random__data__generation_8hh.html#ac07417b71e50685ef8232edc5d7b308c">check_if_sorted</a>(introsort_data,data_size);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    introsort_time.<a class="code" href="classtime__measure.html#ab90518591477f6af32d2dbd31c950764">add_useconds</a>(duration3.count());</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">//Dodatkowe testy sortowania przez wstawianie i kopcowanie</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">    std::cout &lt;&lt;&quot;\nHeapsortexecution time: &quot;;</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">    auto start4 = std::chrono::high_resolution_clock::now();</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">    heapsort(heapsort_data,0,data_size-1);</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">    auto stop4 = std::chrono::high_resolution_clock::now();</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">    auto duration4 = std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(stop4 - start4); </span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">    std::cout &lt;&lt; duration4.count() &lt;&lt; &quot; usec \n&quot;; </span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">    std::cout&lt;&lt;&quot;\nData status after heapsort: &quot;&lt;&lt;check_if_sorted(heapsort_data,data_size)&lt;&lt;&quot;\n&quot;;</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">    std::cout &lt;&lt;&quot;\nInsertionsort execution time: &quot;;</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">    auto start5 = std::chrono::high_resolution_clock::now(); </span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">    insertionsort(insertionsort_data,0,data_size-1);</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">    auto stop5 = std::chrono::high_resolution_clock::now();</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">    auto duration5 = std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(stop5 - start5); </span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">    std::cout &lt;&lt; duration5.count() &lt;&lt; &quot; usec \n&quot;; </span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">    std::cout&lt;&lt;&quot;\nData status after insertionsort: &quot;&lt;&lt;check_if_sorted(insertionsort_data,data_size)&lt;&lt;&quot;\n&quot;;</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="comment">// Wyswietla dane po sortowaniu wybranym algorytmem</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">/*  std::cout&lt;&lt;&quot;\nData: &quot;;</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">    for(int i=0;i&lt;data_size;i++){</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">      std::cout&lt;&lt;introsort_data[i];</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">      if(i!=data_size-1){std::cout&lt;&lt;&quot; , &quot;;}</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">    std::cout&lt;&lt;&quot;\nSize of data:&quot;&lt;&lt;data_size&lt;&lt;&quot;\n&quot;;</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;\n          RESULTS\n&quot;</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;After &quot;</span>&lt;&lt;repetitions&lt;&lt;<span class="stringliteral">&quot; repetitions\n&quot;</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;With &quot;</span>&lt;&lt;data_size&lt;&lt;<span class="stringliteral">&quot; elements each time\n&quot;</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;Data already sorted in &quot;</span>&lt;&lt;percent_sorted&lt;&lt;<span class="stringliteral">&quot; %\n&quot;</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;Overall  data generation time  = &quot;</span>;data_generation_time.<a class="code" href="classtime__measure.html#abf1c3c5a8ac79a6c891a1a39a2b2e73d">display</a>();std::cout&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;                   data status = &quot;</span>&lt;&lt;data_generation_status&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;Overall quicksort sorting time = &quot;</span>;quicksort_time.<a class="code" href="classtime__measure.html#abf1c3c5a8ac79a6c891a1a39a2b2e73d">display</a>();std::cout&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;                   data status = &quot;</span>&lt;&lt;quicksort_status&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;Overall mergesort sorting time = &quot;</span>;mergesort_time.<a class="code" href="classtime__measure.html#abf1c3c5a8ac79a6c891a1a39a2b2e73d">display</a>();std::cout&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;                   data status = &quot;</span>&lt;&lt;mergesort_status&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;Overall introsort sorting time = &quot;</span>;introsort_time.<a class="code" href="classtime__measure.html#abf1c3c5a8ac79a6c891a1a39a2b2e73d">display</a>();std::cout&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;                   data status = &quot;</span>&lt;&lt;introsort_status&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; }</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aintrosort_8hh_html_af78f0c11d757c8fb75de871179e47e71"><div class="ttname"><a href="introsort_8hh.html#af78f0c11d757c8fb75de871179e47e71">introsort</a></div><div class="ttdeci">void introsort(DATATYPE el_tab[], int first_ind, int last_ind, int depthLimit)</div><div class="ttdoc">Funkcja sortująca fragment tablicy metodą sortowania introspektywnego.</div><div class="ttdef"><b>Definition:</b> <a href="introsort_8hh_source.html#l00017">introsort.hh:17</a></div></div>
+<div class="ttc" id="amergesort_8hh_html"><div class="ttname"><a href="mergesort_8hh.html">mergesort.hh</a></div><div class="ttdoc">Zawiera algorytm sortowania przez scalanie.</div></div>
+<div class="ttc" id="aclasstime__measure_html_ab90518591477f6af32d2dbd31c950764"><div class="ttname"><a href="classtime__measure.html#ab90518591477f6af32d2dbd31c950764">time_measure::add_useconds</a></div><div class="ttdeci">void add_useconds(int new_useconds)</div><div class="ttdoc">Funkcja dodawania mikrosekund do mierzonego czasu.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00095">time_measurements.hh:95</a></div></div>
+<div class="ttc" id="arandom__data__generation_8hh_html_a04fa5c2266c0e4217d928e7910651541"><div class="ttname"><a href="random__data__generation_8hh.html#a04fa5c2266c0e4217d928e7910651541">generate_test_data</a></div><div class="ttdeci">void generate_test_data(DATATYPE **test_data_ptr, int amount_of_data, float percent_already_sorted)</div><div class="ttdoc">Funkcja generująca tablicę losowych liczb.</div><div class="ttdef"><b>Definition:</b> <a href="random__data__generation_8hh_source.html#l00070">random_data_generation.hh:70</a></div></div>
+<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00018">main.cpp:18</a></div></div>
+<div class="ttc" id="aquicksort_8hh_html_aee21d40dc913b95fe7fcb6f70ed1c910"><div class="ttname"><a href="quicksort_8hh.html#aee21d40dc913b95fe7fcb6f70ed1c910">quicksort</a></div><div class="ttdeci">void quicksort(DATATYPE *el_tab, int first_ind, int last_ind)</div><div class="ttdoc">Funkcja sortująca fragment tablicy metodą sortowania szybkiego.</div><div class="ttdef"><b>Definition:</b> <a href="quicksort_8hh_source.html#l00085">quicksort.hh:85</a></div></div>
+<div class="ttc" id="amergesort_8hh_html_acbf2e00c5a889d0e2c1f52d77bc587d7"><div class="ttname"><a href="mergesort_8hh.html#acbf2e00c5a889d0e2c1f52d77bc587d7">mergesort</a></div><div class="ttdeci">void mergesort(DATATYPE *el_tab, int first_ind, int last_ind)</div><div class="ttdoc">Funkcja sortująca fragment tablicy metodą sortowania przez scalanie.</div><div class="ttdef"><b>Definition:</b> <a href="mergesort_8hh_source.html#l00061">mergesort.hh:61</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_abf1c3c5a8ac79a6c891a1a39a2b2e73d"><div class="ttname"><a href="classtime__measure.html#abf1c3c5a8ac79a6c891a1a39a2b2e73d">time_measure::display</a></div><div class="ttdeci">void display()</div><div class="ttdoc">Funkcja do wyświetlania zmierzonego czasu.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00123">time_measurements.hh:123</a></div></div>
+<div class="ttc" id="ainsertionsort_8hh_html"><div class="ttname"><a href="insertionsort_8hh.html">insertionsort.hh</a></div><div class="ttdoc">Zawiera algorytm sortowania przez wstawianie.</div></div>
+<div class="ttc" id="arandom__data__generation_8hh_html_ac07417b71e50685ef8232edc5d7b308c"><div class="ttname"><a href="random__data__generation_8hh.html#ac07417b71e50685ef8232edc5d7b308c">check_if_sorted</a></div><div class="ttdeci">int check_if_sorted(DATATYPE *test_data, int amount_of_data)</div><div class="ttdoc">Funkcja sprawdzająca czy tablica jest posortowana.</div><div class="ttdef"><b>Definition:</b> <a href="random__data__generation_8hh_source.html#l00019">random_data_generation.hh:19</a></div></div>
+<div class="ttc" id="arandom__data__generation_8hh_html"><div class="ttname"><a href="random__data__generation_8hh.html">random_data_generation.hh</a></div><div class="ttdoc">Zawiera funkcje przygotowujące tablice losowych liczb do testow sortowania.</div></div>
+<div class="ttc" id="aheapsort_8hh_html"><div class="ttname"><a href="heapsort_8hh.html">heapsort.hh</a></div><div class="ttdoc">Zawiera algorytm sortowania przez kopcowanie.</div></div>
+<div class="ttc" id="aintrosort_8hh_html"><div class="ttname"><a href="introsort_8hh.html">introsort.hh</a></div><div class="ttdoc">Zawiera algorytm sortowania introspektywnego (hybrydowe)</div></div>
+<div class="ttc" id="aquicksort_8hh_html"><div class="ttname"><a href="quicksort_8hh.html">quicksort.hh</a></div><div class="ttdoc">Zawiera algorytm sortowania szybkiego.</div></div>
+<div class="ttc" id="atime__measurements_8hh_html"><div class="ttname"><a href="time__measurements_8hh.html">time_measurements.hh</a></div><div class="ttdoc">Zawiera klase służącą do przechowywania danych o czasie trwania.</div></div>
+<div class="ttc" id="aclasstime__measure_html"><div class="ttname"><a href="classtime__measure.html">time_measure</a></div><div class="ttdoc">Klasa time_measure przechowująca wartości mierzonego czasu.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00015">time_measurements.hh:15</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4aa64b0872d36146e049722e293482e3.html">prj</a></li><li class="navelem"><a class="el" href="dir_400757c3a0df52e783ed9699284f29ce.html">src</a></li><li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

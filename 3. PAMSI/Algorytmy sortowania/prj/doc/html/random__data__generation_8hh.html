@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Algorytmy sortujące: Dokumentacja pliku random_data_generation.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="sorting_alhorithms_logo2.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Algorytmy sortujące
+   &#160;<span id="projectnumber">Patryk Szydlik</span>
+   </div>
+   <div id="projectbrief">Algorytmy sortowania szybkiego, przez scalanie oraz introspektywnego</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('random__data__generation_8hh.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku random_data_generation.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Zawiera funkcje przygotowujące tablice losowych liczb do testow sortowania.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla random_data_generation.hh:</div>
+<div class="dyncontent">
+<div class="center"><img src="random__data__generation_8hh__incl.png" border="0" usemap="#random__data__generation_8hh" alt=""/></div>
+<map name="random__data__generation_8hh" id="random__data__generation_8hh">
+<area shape="rect" title="Zawiera funkcje przygotowujące tablice losowych liczb do testow sortowania." alt="" coords="5,5,188,32"/>
+<area shape="rect" title=" " alt="" coords="23,80,87,107"/>
+<area shape="rect" title=" " alt="" coords="111,80,165,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="random__data__generation_8hh__dep__incl.png" border="0" usemap="#random__data__generation_8hhdep" alt=""/></div>
+<map name="random__data__generation_8hhdep" id="random__data__generation_8hhdep">
+<area shape="rect" title="Zawiera funkcje przygotowujące tablice losowych liczb do testow sortowania." alt="" coords="5,5,188,32"/>
+<area shape="rect" href="main_8cpp.html" title="Glowny plik zawierajacy wywolanie menu i funkcji zewnetrznych." alt="" coords="59,80,134,107"/>
+</map>
+</div>
+</div>
+<p><a href="random__data__generation_8hh_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ac07417b71e50685ef8232edc5d7b308c"><td class="memTemplParams" colspan="2">template&lt;typename DATATYPE &gt; </td></tr>
+<tr class="memitem:ac07417b71e50685ef8232edc5d7b308c"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="random__data__generation_8hh.html#ac07417b71e50685ef8232edc5d7b308c">check_if_sorted</a> (DATATYPE *test_data, int amount_of_data)</td></tr>
+<tr class="memdesc:ac07417b71e50685ef8232edc5d7b308c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdzająca czy tablica jest posortowana.  <a href="random__data__generation_8hh.html#ac07417b71e50685ef8232edc5d7b308c">Więcej...</a><br /></td></tr>
+<tr class="separator:ac07417b71e50685ef8232edc5d7b308c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa642a525db3de95f79929a7485370547"><td class="memTemplParams" colspan="2">template&lt;typename DATATYPE &gt; </td></tr>
+<tr class="memitem:aa642a525db3de95f79929a7485370547"><td class="memTemplItemLeft" align="right" valign="top">DATATYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="random__data__generation_8hh.html#aa642a525db3de95f79929a7485370547">increasing_RNG</a> (DATATYPE last_value, DATATYPE difference)</td></tr>
+<tr class="memdesc:aa642a525db3de95f79929a7485370547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja losująca kolejną liczbę po last_value większą o maksymalnie difference.  <a href="random__data__generation_8hh.html#aa642a525db3de95f79929a7485370547">Więcej...</a><br /></td></tr>
+<tr class="separator:aa642a525db3de95f79929a7485370547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4423dd97f91ace4a889bc018d5e8f7"><td class="memTemplParams" colspan="2">template&lt;typename DATATYPE &gt; </td></tr>
+<tr class="memitem:a9c4423dd97f91ace4a889bc018d5e8f7"><td class="memTemplItemLeft" align="right" valign="top">DATATYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="random__data__generation_8hh.html#a9c4423dd97f91ace4a889bc018d5e8f7">limited_RNG</a> (DATATYPE lowest_value, DATATYPE highest_value)</td></tr>
+<tr class="memdesc:a9c4423dd97f91ace4a889bc018d5e8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja losująca liczbę z przedziału lowest_value - highest_value.  <a href="random__data__generation_8hh.html#a9c4423dd97f91ace4a889bc018d5e8f7">Więcej...</a><br /></td></tr>
+<tr class="separator:a9c4423dd97f91ace4a889bc018d5e8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fa5c2266c0e4217d928e7910651541"><td class="memTemplParams" colspan="2">template&lt;typename DATATYPE &gt; </td></tr>
+<tr class="memitem:a04fa5c2266c0e4217d928e7910651541"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="random__data__generation_8hh.html#a04fa5c2266c0e4217d928e7910651541">generate_test_data</a> (DATATYPE **test_data_ptr, int amount_of_data, float percent_already_sorted)</td></tr>
+<tr class="memdesc:a04fa5c2266c0e4217d928e7910651541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja generująca tablicę losowych liczb.  <a href="random__data__generation_8hh.html#a04fa5c2266c0e4217d928e7910651541">Więcej...</a><br /></td></tr>
+<tr class="separator:a04fa5c2266c0e4217d928e7910651541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2609df05439eea1bb51a573f6d37be"><td class="memTemplParams" colspan="2">template&lt;typename DATATYPE &gt; </td></tr>
+<tr class="memitem:afb2609df05439eea1bb51a573f6d37be"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="random__data__generation_8hh.html#afb2609df05439eea1bb51a573f6d37be">generate_test_data</a> (DATATYPE **test_data_ptr, int amount_of_data, int percent_already_sorted, DATATYPE bottom_limit, DATATYPE top_limit)</td></tr>
+<tr class="memdesc:afb2609df05439eea1bb51a573f6d37be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja generująca tablicę losowych liczb z ograniczeniami.  <a href="random__data__generation_8hh.html#afb2609df05439eea1bb51a573f6d37be">Więcej...</a><br /></td></tr>
+<tr class="separator:afb2609df05439eea1bb51a573f6d37be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Patryk Szydlik </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>12.03.2020 </dd></dl>
+
+<p class="definition">Definicja w pliku <a class="el" href="random__data__generation_8hh_source.html">random_data_generation.hh</a>.</p>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="ac07417b71e50685ef8232edc5d7b308c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07417b71e50685ef8232edc5d7b308c">&#9670;&nbsp;</a></span>check_if_sorted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DATATYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_if_sorted </td>
+          <td>(</td>
+          <td class="paramtype">DATATYPE *&#160;</td>
+          <td class="paramname"><em>test_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>amount_of_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">test_data</td><td>- tablica do sprawdzenia </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount_of_data</td><td>- rozmiar tablicy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Ilość wystąpień błędnej kolejności elementów </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="random__data__generation_8hh_source.html#l00019">19</a> pliku <a class="el" href="random__data__generation_8hh_source.html">random_data_generation.hh</a>.</p>
+
+</div>
+</div>
+<a id="a04fa5c2266c0e4217d928e7910651541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04fa5c2266c0e4217d928e7910651541">&#9670;&nbsp;</a></span>generate_test_data() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DATATYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void generate_test_data </td>
+          <td>(</td>
+          <td class="paramtype">DATATYPE **&#160;</td>
+          <td class="paramname"><em>test_data_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>amount_of_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>percent_already_sorted</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">test_data_ptr</td><td>- wskaźnik na wskaźnik będący początkiem tablicy </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount_of_data</td><td>- rozmiar tablicy </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">percent_already_sorted</td><td>- procent danych, który ma być posortowany </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="random__data__generation_8hh_source.html#l00070">70</a> pliku <a class="el" href="random__data__generation_8hh_source.html">random_data_generation.hh</a>.</p>
+
+</div>
+</div>
+<a id="afb2609df05439eea1bb51a573f6d37be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2609df05439eea1bb51a573f6d37be">&#9670;&nbsp;</a></span>generate_test_data() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DATATYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void generate_test_data </td>
+          <td>(</td>
+          <td class="paramtype">DATATYPE **&#160;</td>
+          <td class="paramname"><em>test_data_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>amount_of_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>percent_already_sorted</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DATATYPE&#160;</td>
+          <td class="paramname"><em>bottom_limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DATATYPE&#160;</td>
+          <td class="paramname"><em>top_limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">test_data_ptr</td><td>- wskaźnik na wskaźnik będący początkiem tablicy </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount_of_data</td><td>- rozmiar tablicy </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">percent_already_sorted</td><td>- procent danych, który ma być posortowany </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bottom_limit</td><td>- najmniejsza dopuszczalna wartośc liczb </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">top_limit</td><td>- największa dopuszczalna wartość liczb </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="random__data__generation_8hh_source.html#l00101">101</a> pliku <a class="el" href="random__data__generation_8hh_source.html">random_data_generation.hh</a>.</p>
+
+</div>
+</div>
+<a id="aa642a525db3de95f79929a7485370547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa642a525db3de95f79929a7485370547">&#9670;&nbsp;</a></span>increasing_RNG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DATATYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">DATATYPE increasing_RNG </td>
+          <td>(</td>
+          <td class="paramtype">DATATYPE&#160;</td>
+          <td class="paramname"><em>last_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DATATYPE&#160;</td>
+          <td class="paramname"><em>difference</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">last_value</td><td>- poprzednia wartość losowa </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">difference</td><td>- maksymalny wzrost nowej wartości od poprzedniej </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Nowo wylosowana liczba </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="random__data__generation_8hh_source.html#l00034">34</a> pliku <a class="el" href="random__data__generation_8hh_source.html">random_data_generation.hh</a>.</p>
+
+</div>
+</div>
+<a id="a9c4423dd97f91ace4a889bc018d5e8f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4423dd97f91ace4a889bc018d5e8f7">&#9670;&nbsp;</a></span>limited_RNG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DATATYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">DATATYPE limited_RNG </td>
+          <td>(</td>
+          <td class="paramtype">DATATYPE&#160;</td>
+          <td class="paramname"><em>lowest_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DATATYPE&#160;</td>
+          <td class="paramname"><em>highest_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowest_value</td><td>- najmniejsza wartość do wylosowania </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">highest_value</td><td>- największa wartość do wylosowania </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Nowo wylosowana liczba </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="random__data__generation_8hh_source.html#l00051">51</a> pliku <a class="el" href="random__data__generation_8hh_source.html">random_data_generation.hh</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4aa64b0872d36146e049722e293482e3.html">prj</a></li><li class="navelem"><a class="el" href="dir_72345776cd6700fb0dedb8f1faaa0c00.html">inc</a></li><li class="navelem"><a class="el" href="random__data__generation_8hh.html">random_data_generation.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

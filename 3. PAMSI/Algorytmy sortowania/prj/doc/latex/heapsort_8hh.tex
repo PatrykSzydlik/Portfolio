@@ -1,0 +1,95 @@
+\hypertarget{heapsort_8hh}{}\doxysection{Dokumentacja pliku heapsort.\+hh}
+\label{heapsort_8hh}\index{heapsort.hh@{heapsort.hh}}
+
+
+Zawiera algorytm sortowania przez kopcowanie.  
+
+
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{heapsort_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\void \mbox{\hyperlink{heapsort_8hh_a9b96167b732e28544a763e91049fb8b2}{make\+\_\+heap}} (D\+A\+T\+A\+T\+Y\+PE $\ast$el\+\_\+tab, int first\+\_\+ind, int last\+\_\+ind)
+\begin{DoxyCompactList}\small\item\em Funkcja tworząca kopiec na bazie tablicy. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\void \mbox{\hyperlink{heapsort_8hh_aa8e20c1bf827e886c1b07013354f1056}{down\+\_\+heap}} (D\+A\+T\+A\+T\+Y\+PE $\ast$el\+\_\+tab, int first\+\_\+ind, int last\+\_\+ind)
+\begin{DoxyCompactList}\small\item\em Funkcja przywracająca własność kopca metodą downheap. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\void \mbox{\hyperlink{heapsort_8hh_a6990ee40097df91ad9117911a29bd6b2}{heapsort}} (D\+A\+T\+A\+T\+Y\+PE $\ast$el\+\_\+tab, int first\+\_\+ind, int last\+\_\+ind)
+\begin{DoxyCompactList}\small\item\em Funkcja sortująca fragment tablicy metodą sortowania przez kopcowanie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Patryk Szydlik 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+19.\+03.\+2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{heapsort_8hh_aa8e20c1bf827e886c1b07013354f1056}\label{heapsort_8hh_aa8e20c1bf827e886c1b07013354f1056}} 
+\index{heapsort.hh@{heapsort.hh}!down\_heap@{down\_heap}}
+\index{down\_heap@{down\_heap}!heapsort.hh@{heapsort.hh}}
+\doxysubsubsection{\texorpdfstring{down\_heap()}{down\_heap()}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+void down\+\_\+heap (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE $\ast$}]{el\+\_\+tab,  }\item[{int}]{first\+\_\+ind,  }\item[{int}]{last\+\_\+ind }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em el\+\_\+tab} & -\/ wskaźnik na tablice \\
+\hline
+\mbox{\texttt{ in}}  & {\em first\+\_\+ind} & -\/ indeks początku fragmentu tablicy \\
+\hline
+\mbox{\texttt{ in}}  & {\em last\+\_\+ind} & -\/ indeks końca fragmentu tablicy \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 40 pliku heapsort.\+hh.
+
+\mbox{\Hypertarget{heapsort_8hh_a6990ee40097df91ad9117911a29bd6b2}\label{heapsort_8hh_a6990ee40097df91ad9117911a29bd6b2}} 
+\index{heapsort.hh@{heapsort.hh}!heapsort@{heapsort}}
+\index{heapsort@{heapsort}!heapsort.hh@{heapsort.hh}}
+\doxysubsubsection{\texorpdfstring{heapsort()}{heapsort()}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+void heapsort (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE $\ast$}]{el\+\_\+tab,  }\item[{int}]{first\+\_\+ind,  }\item[{int}]{last\+\_\+ind }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em el\+\_\+tab} & -\/ wskaźnik na tablice \\
+\hline
+\mbox{\texttt{ in}}  & {\em first\+\_\+ind} & -\/ indeks początku sortowanego fragmentu tablicy \\
+\hline
+\mbox{\texttt{ in}}  & {\em last\+\_\+ind} & -\/ indeks końca sortowanego fragmentu tablicy \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 64 pliku heapsort.\+hh.
+
+\mbox{\Hypertarget{heapsort_8hh_a9b96167b732e28544a763e91049fb8b2}\label{heapsort_8hh_a9b96167b732e28544a763e91049fb8b2}} 
+\index{heapsort.hh@{heapsort.hh}!make\_heap@{make\_heap}}
+\index{make\_heap@{make\_heap}!heapsort.hh@{heapsort.hh}}
+\doxysubsubsection{\texorpdfstring{make\_heap()}{make\_heap()}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+void make\+\_\+heap (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE $\ast$}]{el\+\_\+tab,  }\item[{int}]{first\+\_\+ind,  }\item[{int}]{last\+\_\+ind }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em el\+\_\+tab} & -\/ wskaźnik na tablice \\
+\hline
+\mbox{\texttt{ in}}  & {\em first\+\_\+ind} & -\/ indeks początku fragmentu tablicy \\
+\hline
+\mbox{\texttt{ in}}  & {\em last\+\_\+ind} & -\/ indeks końca fragmentu tablicy \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 16 pliku heapsort.\+hh.
+

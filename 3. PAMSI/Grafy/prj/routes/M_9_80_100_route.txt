@@ -1,0 +1,160 @@
+Vertex 0 distance 0
+0 0 
+Vertex 1 distance 9
+0 64 48 75 1 
+Vertex 2 distance 5
+0 64 65 2 
+Vertex 3 distance 4
+0 3 
+Vertex 4 distance 5
+0 3 4 
+Vertex 5 distance 6
+0 64 65 5 
+Vertex 6 distance 11
+0 64 65 6 
+Vertex 7 distance 10
+0 64 67 7 
+Vertex 8 distance 7
+0 64 65 39 8 
+Vertex 9 distance 8
+0 64 65 2 9 
+Vertex 10 distance 7
+0 3 4 10 
+Vertex 11 distance 6
+0 64 11 
+Vertex 12 distance 7
+0 32 57 12 
+Vertex 13 distance 7
+0 59 13 
+Vertex 14 distance 9
+0 64 65 2 54 14 
+Vertex 15 distance 9
+0 64 65 15 
+Vertex 16 distance 9
+0 32 57 40 16 
+Vertex 17 distance 6
+0 19 17 
+Vertex 18 distance 7
+0 64 65 39 30 18 
+Vertex 19 distance 4
+0 19 
+Vertex 20 distance 5
+0 64 65 20 
+Vertex 21 distance 8
+0 64 65 21 
+Vertex 22 distance 7
+0 32 22 
+Vertex 23 distance 10
+0 32 23 
+Vertex 24 distance 9
+0 64 65 39 37 24 
+Vertex 25 distance 11
+0 64 65 2 54 25 
+Vertex 26 distance 9
+0 3 26 
+Vertex 27 distance 10
+0 64 65 2 54 47 27 
+Vertex 28 distance 9
+0 32 22 28 
+Vertex 29 distance 9
+0 64 65 29 
+Vertex 30 distance 6
+0 64 65 39 30 
+Vertex 31 distance 8
+0 64 65 31 
+Vertex 32 distance 2
+0 32 
+Vertex 33 distance 7
+0 64 11 33 
+Vertex 34 distance 7
+0 64 65 39 30 34 
+Vertex 35 distance 12
+0 64 65 39 30 35 
+Vertex 36 distance 11
+0 36 
+Vertex 37 distance 7
+0 64 65 39 37 
+Vertex 38 distance 7
+0 32 57 38 
+Vertex 39 distance 5
+0 64 65 39 
+Vertex 40 distance 6
+0 32 57 40 
+Vertex 41 distance 14
+0 64 48 75 1 41 
+Vertex 42 distance 8
+0 32 57 12 42 
+Vertex 43 distance 9
+0 3 4 10 43 
+Vertex 44 distance 9
+0 3 4 44 
+Vertex 45 distance 9
+0 64 65 39 45 
+Vertex 46 distance 9
+0 64 48 46 
+Vertex 47 distance 8
+0 64 65 2 54 47 
+Vertex 48 distance 5
+0 64 48 
+Vertex 49 distance 6
+0 59 61 49 
+Vertex 50 distance 10
+0 64 48 75 50 
+Vertex 51 distance 8
+0 3 4 51 
+Vertex 52 distance 8
+0 64 65 20 52 
+Vertex 53 distance 9
+0 19 17 53 
+Vertex 54 distance 7
+0 64 65 2 54 
+Vertex 55 distance 9
+0 64 65 2 55 
+Vertex 56 distance 8
+0 32 56 
+Vertex 57 distance 5
+0 32 57 
+Vertex 58 distance 9
+0 58 
+Vertex 59 distance 4
+0 59 
+Vertex 60 distance 7
+0 32 57 60 
+Vertex 61 distance 5
+0 59 61 
+Vertex 62 distance 7
+0 32 57 40 62 
+Vertex 63 distance 6
+0 59 74 63 
+Vertex 64 distance 1
+0 64 
+Vertex 65 distance 4
+0 64 65 
+Vertex 66 distance 9
+0 19 17 72 66 
+Vertex 67 distance 8
+0 64 67 
+Vertex 68 distance 8
+0 32 68 
+Vertex 69 distance 8
+0 64 65 69 
+Vertex 70 distance 8
+0 64 11 70 
+Vertex 71 distance 8
+0 64 65 2 54 71 
+Vertex 72 distance 8
+0 19 17 72 
+Vertex 73 distance 9
+0 59 61 49 73 
+Vertex 74 distance 5
+0 59 74 
+Vertex 75 distance 8
+0 64 48 75 
+Vertex 76 distance 8
+0 59 13 76 
+Vertex 77 distance 10
+0 64 77 
+Vertex 78 distance 7
+0 59 78 
+Vertex 79 distance 7
+0 32 79 

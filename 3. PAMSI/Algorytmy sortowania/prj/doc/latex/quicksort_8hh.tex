@@ -1,0 +1,123 @@
+\hypertarget{quicksort_8hh}{}\doxysection{Dokumentacja pliku quicksort.\+hh}
+\label{quicksort_8hh}\index{quicksort.hh@{quicksort.hh}}
+
+
+Zawiera algorytm sortowania szybkiego.  
+
+
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{quicksort_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\void \mbox{\hyperlink{quicksort_8hh_af47e5f0d2f70a23a8de9019f4040ce96}{swap}} (D\+A\+T\+A\+T\+Y\+PE $\ast$el\+\_\+tab, int first\+\_\+ind, int second\+\_\+ind)
+\begin{DoxyCompactList}\small\item\em Funkcja zamieniająca miejscami elementy tablicy. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\int \mbox{\hyperlink{quicksort_8hh_a7dff5df3012234b8ccb0593976c6eb7d}{choose\+\_\+split\+\_\+point}} (D\+A\+T\+A\+T\+Y\+PE $\ast$el\+\_\+tab, int first\+\_\+ind, int last\+\_\+ind)
+\begin{DoxyCompactList}\small\item\em Funkcja wybiera punkt podziału fragmentu tablicy. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\int \mbox{\hyperlink{quicksort_8hh_aa0f857aa5c4d002d0f08b384b34d2752}{split\+\_\+tab}} (D\+A\+T\+A\+T\+Y\+PE $\ast$el\+\_\+tab, int first\+\_\+ind, int last\+\_\+ind)
+\begin{DoxyCompactList}\small\item\em Funkcja dzieli tablice według wybranego klucza. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\void \mbox{\hyperlink{quicksort_8hh_aee21d40dc913b95fe7fcb6f70ed1c910}{quicksort}} (D\+A\+T\+A\+T\+Y\+PE $\ast$el\+\_\+tab, int first\+\_\+ind, int last\+\_\+ind)
+\begin{DoxyCompactList}\small\item\em Funkcja sortująca fragment tablicy metodą sortowania szybkiego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Patryk Szydlik 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+11.\+03.\+2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{quicksort_8hh_a7dff5df3012234b8ccb0593976c6eb7d}\label{quicksort_8hh_a7dff5df3012234b8ccb0593976c6eb7d}} 
+\index{quicksort.hh@{quicksort.hh}!choose\_split\_point@{choose\_split\_point}}
+\index{choose\_split\_point@{choose\_split\_point}!quicksort.hh@{quicksort.hh}}
+\doxysubsubsection{\texorpdfstring{choose\_split\_point()}{choose\_split\_point()}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+int choose\+\_\+split\+\_\+point (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE $\ast$}]{el\+\_\+tab,  }\item[{int}]{first\+\_\+ind,  }\item[{int}]{last\+\_\+ind }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em el\+\_\+tab} & -\/ wskaźnik na tablice \\
+\hline
+\mbox{\texttt{ in}}  & {\em first\+\_\+ind} & -\/ indeks początku dzielonego fragmentu tablicy \\
+\hline
+\mbox{\texttt{ in}}  & {\em last\+\_\+ind} & -\/ indeks końca dzielonego fragmentu tablicy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+indeks elementu do podziału 
+\end{DoxyReturn}
+
+
+Definicja w linii 30 pliku quicksort.\+hh.
+
+\mbox{\Hypertarget{quicksort_8hh_aee21d40dc913b95fe7fcb6f70ed1c910}\label{quicksort_8hh_aee21d40dc913b95fe7fcb6f70ed1c910}} 
+\index{quicksort.hh@{quicksort.hh}!quicksort@{quicksort}}
+\index{quicksort@{quicksort}!quicksort.hh@{quicksort.hh}}
+\doxysubsubsection{\texorpdfstring{quicksort()}{quicksort()}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+void quicksort (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE $\ast$}]{el\+\_\+tab,  }\item[{int}]{first\+\_\+ind,  }\item[{int}]{last\+\_\+ind }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em el\+\_\+tab} & -\/ wskaźnik na tablice \\
+\hline
+\mbox{\texttt{ in}}  & {\em first\+\_\+ind} & -\/ indeks początku sortowanego fragmentu tablicy \\
+\hline
+\mbox{\texttt{ in}}  & {\em last\+\_\+ind} & -\/ indeks końca sortowanego fragmentu tablicy \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 85 pliku quicksort.\+hh.
+
+\mbox{\Hypertarget{quicksort_8hh_aa0f857aa5c4d002d0f08b384b34d2752}\label{quicksort_8hh_aa0f857aa5c4d002d0f08b384b34d2752}} 
+\index{quicksort.hh@{quicksort.hh}!split\_tab@{split\_tab}}
+\index{split\_tab@{split\_tab}!quicksort.hh@{quicksort.hh}}
+\doxysubsubsection{\texorpdfstring{split\_tab()}{split\_tab()}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+int split\+\_\+tab (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE $\ast$}]{el\+\_\+tab,  }\item[{int}]{first\+\_\+ind,  }\item[{int}]{last\+\_\+ind }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em el\+\_\+tab} & -\/ wskaźnik na tablice \\
+\hline
+\mbox{\texttt{ in}}  & {\em first\+\_\+ind} & -\/ indeks początku dzielonego fragmentu tablicy \\
+\hline
+\mbox{\texttt{ in}}  & {\em last\+\_\+ind} & -\/ indeks końca dzielonego fragmentu tablicy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+indeks elementu między podzielonymi częściami 
+\end{DoxyReturn}
+
+
+Definicja w linii 63 pliku quicksort.\+hh.
+
+\mbox{\Hypertarget{quicksort_8hh_af47e5f0d2f70a23a8de9019f4040ce96}\label{quicksort_8hh_af47e5f0d2f70a23a8de9019f4040ce96}} 
+\index{quicksort.hh@{quicksort.hh}!swap@{swap}}
+\index{swap@{swap}!quicksort.hh@{quicksort.hh}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+void swap (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE $\ast$}]{el\+\_\+tab,  }\item[{int}]{first\+\_\+ind,  }\item[{int}]{second\+\_\+ind }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em el\+\_\+tab} & -\/ wskaźnik na tablice \\
+\hline
+\mbox{\texttt{ in}}  & {\em first\+\_\+ind} & -\/ indeks pierwszego elementu do zamiany \\
+\hline
+\mbox{\texttt{ in}}  & {\em second\+\_\+ind} & -\/ indeks drugiego elementu do zamiany \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 16 pliku quicksort.\+hh.
+

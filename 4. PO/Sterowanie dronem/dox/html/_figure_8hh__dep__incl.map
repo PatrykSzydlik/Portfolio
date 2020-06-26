@@ -1,0 +1,15 @@
+<map id="/home/p_szydlik/Pulpit/Zadanie 7/prj/inc/Figure.hh" name="/home/p_szydlik/Pulpit/Zadanie 7/prj/inc/Figure.hh">
+<area shape="rect" id="node2" href="$_prism_8hh.html" title="Zawiera klase i funkcje do obslugi bryly. " alt="" coords="303,95,482,136"/>
+<area shape="rect" id="node3" href="$_object3_d_8hh.html" title="Zawiera klase i metody obslugujace scene. " alt="" coords="293,191,492,233"/>
+<area shape="rect" id="node9" href="$_cuboid_8hh.html" title="Definiuje prostopadłościan na podstawie wzorca. " alt="" coords="5,288,191,329"/>
+<area shape="rect" id="node14" href="$_hex__prism_8hh.html" title="Definiuje graniastosłup sześciokątny na podstawie wzorca. " alt="" coords="571,184,726,240"/>
+<area shape="rect" id="node4" href="$_body_8hh.html" title="Zawiera klase i metody obslugujace kadłub. " alt="" coords="473,377,648,419"/>
+<area shape="rect" id="node10" href="$_obstacle_8hh.html" title="Zawiera klase i metody obslugujace przeszkode. " alt="" coords="131,377,327,419"/>
+<area shape="rect" id="node11" href="$_window_8hh.html" title="Zawiera klase i metody obslugujace przeszkode. " alt="" coords="267,467,457,508"/>
+<area shape="rect" id="node12" href="$_rotor_8hh.html" title="Zawiera klase i metody obslugujace rotor. " alt="" coords="589,288,765,329"/>
+<area shape="rect" id="node13" href="$_observer_8hh.html" title="/home/p_szydlik/Pulpit\l/Zadanie 7/prj/inc/Observer.hh" alt="" coords="266,288,463,329"/>
+<area shape="rect" id="node5" href="$_drone_8hh.html" title="Zawiera klase i metody obslugujace drona. " alt="" coords="482,467,661,508"/>
+<area shape="rect" id="node6" href="$_fabric_8hh.html" title="/home/p_szydlik/Pulpit\l/Zadanie 7/prj/inc/Fabric.hh" alt="" coords="272,556,452,597"/>
+<area shape="rect" id="node7" href="$_scene_8hh.html" title="Zawiera klase i metody obslugujace scenerie. " alt="" coords="271,645,453,687"/>
+<area shape="rect" id="node8" href="$main_8cpp.html" title="Glowny plik zawierajacy wywolanie menu i funkcji zewnetrznych. " alt="" coords="272,735,452,776"/>
+</map>

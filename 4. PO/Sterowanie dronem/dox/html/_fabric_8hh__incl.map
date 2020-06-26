@@ -1,0 +1,16 @@
+<map id="/home/p_szydlik/Pulpit/Zadanie 7/prj/inc/Fabric.hh" name="/home/p_szydlik/Pulpit/Zadanie 7/prj/inc/Fabric.hh">
+<area shape="rect" id="node3" href="$_drone_8hh.html" title="Zawiera klase i metody obslugujace drona. " alt="" coords="208,95,283,121"/>
+<area shape="rect" id="node19" href="$_obstacle_8hh.html" title="Zawiera klase i metody obslugujace przeszkode. " alt="" coords="94,169,186,196"/>
+<area shape="rect" id="node20" href="$_window_8hh.html" title="Zawiera klase i metody obslugujace przeszkode. " alt="" coords="43,95,130,121"/>
+<area shape="rect" id="node4" href="$_body_8hh.html" title="Zawiera klase i metody obslugujace kadłub. " alt="" coords="210,169,281,196"/>
+<area shape="rect" id="node17" href="$_rotor_8hh.html" title="Zawiera klase i metody obslugujace rotor. " alt="" coords="301,244,373,271"/>
+<area shape="rect" id="node5" href="$_object3_d_8hh.html" title="Zawiera klase i metody obslugujace scene. " alt="" coords="106,319,201,345"/>
+<area shape="rect" id="node16" href="$_cuboid_8hh.html" title="Definiuje prostopadłościan na podstawie wzorca. " alt="" coords="195,244,277,271"/>
+<area shape="rect" id="node7" href="$_prism_8hh.html" title="Zawiera klase i funkcje do obslugi bryly. " alt="" coords="201,393,276,420"/>
+<area shape="rect" id="node8" href="$_figure_8hh.html" title="Zawiera klase Figure oraz jej metody. Sluzy do opisania powierzchni równoległej do XZ..." alt="" coords="201,468,277,495"/>
+<area shape="rect" id="node10" href="$_n_e_w___vector_8hh.html" title="Definiuje klase wektora 3D na bazie wzorca. " alt="" coords="289,617,407,644"/>
+<area shape="rect" id="node14" href="$_n_e_w___matrix_8hh.html" title="Definiuje macierz 3x3 na podstawie wzorca. " alt="" coords="181,543,296,569"/>
+<area shape="rect" id="node11" href="$_vector_8hh.html" title="Zawiera szablok klasy Wektor. " alt="" coords="194,692,273,719"/>
+<area shape="rect" id="node15" href="$_matrix_8hh.html" title="Zawiera szablon klasy Macierz. " alt="" coords="189,617,265,644"/>
+<area shape="rect" id="node18" href="$_hex__prism_8hh.html" title="Definiuje graniastosłup sześciokątny na podstawie wzorca. " alt="" coords="282,319,385,345"/>
+</map>

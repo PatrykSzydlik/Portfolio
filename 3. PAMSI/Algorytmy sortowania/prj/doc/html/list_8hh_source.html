@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Algorytmy sortujące: Plik źródłowy list.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="sorting_alhorithms_logo2.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Algorytmy sortujące
+   &#160;<span id="projectnumber">Patryk Szydlik</span>
+   </div>
+   <div id="projectbrief">Algorytmy sortowania szybkiego, przez scalanie oraz introspektywnego</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('list_8hh_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">list.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="list_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> VALUE&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_list__element.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_list__element.html">List_element</a>{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_list__element.html#a9ba5aa365dd2bc807f63ca53d9a28e03">   16</a></span>&#160;        <a class="code" href="class_list__element.html">List_element&lt;VALUE&gt;</a> * <a class="code" href="class_list__element.html#a9ba5aa365dd2bc807f63ca53d9a28e03">Next</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_list__element.html#af71ee0a347ef63da1fcfda2fd87ab32a">   17</a></span>&#160;        <a class="code" href="class_list__element.html">List_element&lt;VALUE&gt;</a> * <a class="code" href="class_list__element.html#af71ee0a347ef63da1fcfda2fd87ab32a">Previous</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_list__element.html#a68be2bf2f5b34306dd0901776383c789">   18</a></span>&#160;        VALUE <a class="code" href="class_list__element.html#a68be2bf2f5b34306dd0901776383c789">value</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_list__element.html#a3ef9fa688ab117d1d4984b0f3758afc6">   21</a></span>&#160;        <a class="code" href="class_list__element.html#a3ef9fa688ab117d1d4984b0f3758afc6">List_element</a>(VALUE new_value){</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="class_list__element.html#a68be2bf2f5b34306dd0901776383c789">value</a>=new_value;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_list__element.html#a54f176969fbf359b4f47ded6e30ebde5">   25</a></span>&#160;        VALUE <a class="code" href="class_list__element.html#a54f176969fbf359b4f47ded6e30ebde5">get_value</a>(){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_list__element.html#a68be2bf2f5b34306dd0901776383c789">value</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_list__element.html#ac4884c554baaabeb3de5f0f143def24e">   29</a></span>&#160;        <a class="code" href="class_list__element.html">List_element&lt;VALUE&gt;</a> &amp; <a class="code" href="class_list__element.html#ac4884c554baaabeb3de5f0f143def24e">get_next</a>(){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_list__element.html#a9ba5aa365dd2bc807f63ca53d9a28e03">Next</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_list__element.html#a7f41668f01893fa44a65924c448bf7e6">   34</a></span>&#160;        <a class="code" href="class_list__element.html">List_element&lt;VALUE&gt;</a> &amp; <a class="code" href="class_list__element.html#a7f41668f01893fa44a65924c448bf7e6">get_previous</a>(){</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_list__element.html#af71ee0a347ef63da1fcfda2fd87ab32a">Previous</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> VALUE&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span>List {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="list_8hh.html#ac721c748b73f39cdbb6142c2d4c3c9b1">   47</a></span>&#160;        <a class="code" href="class_list__element.html">List_element&lt;VALUE&gt;</a> * <a class="code" href="list_8hh.html#ac721c748b73f39cdbb6142c2d4c3c9b1">First</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="list_8hh.html#a4c1832253043801949591252e65f9595">   48</a></span>&#160;        <a class="code" href="class_list__element.html">List_element&lt;VALUE&gt;</a> * <a class="code" href="list_8hh.html#a4c1832253043801949591252e65f9595">Last</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;       </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_list__header.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_list__header.html">List_header</a>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="alist_8hh_html_a4c1832253043801949591252e65f9595"><div class="ttname"><a href="list_8hh.html#a4c1832253043801949591252e65f9595">Last</a></div><div class="ttdeci">List_element&lt; VALUE &gt; * Last</div><div class="ttdef"><b>Definition:</b> <a href="list_8hh_source.html#l00048">list.hh:48</a></div></div>
+<div class="ttc" id="aclass_list__element_html_a9ba5aa365dd2bc807f63ca53d9a28e03"><div class="ttname"><a href="class_list__element.html#a9ba5aa365dd2bc807f63ca53d9a28e03">List_element::Next</a></div><div class="ttdeci">List_element&lt; VALUE &gt; * Next</div><div class="ttdef"><b>Definition:</b> <a href="list_8hh_source.html#l00016">list.hh:16</a></div></div>
+<div class="ttc" id="aclass_list__element_html_a7f41668f01893fa44a65924c448bf7e6"><div class="ttname"><a href="class_list__element.html#a7f41668f01893fa44a65924c448bf7e6">List_element::get_previous</a></div><div class="ttdeci">List_element&lt; VALUE &gt; &amp; get_previous()</div><div class="ttdef"><b>Definition:</b> <a href="list_8hh_source.html#l00034">list.hh:34</a></div></div>
+<div class="ttc" id="aclass_list__element_html_a3ef9fa688ab117d1d4984b0f3758afc6"><div class="ttname"><a href="class_list__element.html#a3ef9fa688ab117d1d4984b0f3758afc6">List_element::List_element</a></div><div class="ttdeci">List_element(VALUE new_value)</div><div class="ttdef"><b>Definition:</b> <a href="list_8hh_source.html#l00021">list.hh:21</a></div></div>
+<div class="ttc" id="aclass_list__element_html"><div class="ttname"><a href="class_list__element.html">List_element</a></div><div class="ttdoc">Klasa modelujaca wzorzec elementu listy.</div><div class="ttdef"><b>Definition:</b> <a href="list_8hh_source.html#l00014">list.hh:14</a></div></div>
+<div class="ttc" id="aclass_list__element_html_a54f176969fbf359b4f47ded6e30ebde5"><div class="ttname"><a href="class_list__element.html#a54f176969fbf359b4f47ded6e30ebde5">List_element::get_value</a></div><div class="ttdeci">VALUE get_value()</div><div class="ttdef"><b>Definition:</b> <a href="list_8hh_source.html#l00025">list.hh:25</a></div></div>
+<div class="ttc" id="aclass_list__header_html"><div class="ttname"><a href="class_list__header.html">List_header</a></div><div class="ttdef"><b>Definition:</b> <a href="list_8hh_source.html#l00056">list.hh:56</a></div></div>
+<div class="ttc" id="aclass_list__element_html_af71ee0a347ef63da1fcfda2fd87ab32a"><div class="ttname"><a href="class_list__element.html#af71ee0a347ef63da1fcfda2fd87ab32a">List_element::Previous</a></div><div class="ttdeci">List_element&lt; VALUE &gt; * Previous</div><div class="ttdef"><b>Definition:</b> <a href="list_8hh_source.html#l00017">list.hh:17</a></div></div>
+<div class="ttc" id="aclass_list__element_html_ac4884c554baaabeb3de5f0f143def24e"><div class="ttname"><a href="class_list__element.html#ac4884c554baaabeb3de5f0f143def24e">List_element::get_next</a></div><div class="ttdeci">List_element&lt; VALUE &gt; &amp; get_next()</div><div class="ttdef"><b>Definition:</b> <a href="list_8hh_source.html#l00029">list.hh:29</a></div></div>
+<div class="ttc" id="alist_8hh_html_ac721c748b73f39cdbb6142c2d4c3c9b1"><div class="ttname"><a href="list_8hh.html#ac721c748b73f39cdbb6142c2d4c3c9b1">First</a></div><div class="ttdeci">class List_element * First</div><div class="ttdoc">Klasa modelujaca wzorzec listy.</div></div>
+<div class="ttc" id="aclass_list__element_html_a68be2bf2f5b34306dd0901776383c789"><div class="ttname"><a href="class_list__element.html#a68be2bf2f5b34306dd0901776383c789">List_element::value</a></div><div class="ttdeci">VALUE value</div><div class="ttdef"><b>Definition:</b> <a href="list_8hh_source.html#l00018">list.hh:18</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4aa64b0872d36146e049722e293482e3.html">prj</a></li><li class="navelem"><a class="el" href="dir_72345776cd6700fb0dedb8f1faaa0c00.html">inc</a></li><li class="navelem"><a class="el" href="list_8hh.html">list.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

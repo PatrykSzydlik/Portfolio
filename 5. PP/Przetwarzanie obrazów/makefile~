@@ -1,0 +1,15 @@
+__start__: a.out
+	./a.out
+
+a.out: edycja_1new.o edycja_1_mod.o edycja_1_mod2.o
+	gcc edycja_1new.o edycja_1_mod.o edycja_1_mod2.o
+
+edycja_1new.o: edycja_1new.c edycja_2_mod_main.h
+	gcc -c -Wall -pedantic edycja_1new.c
+
+edycja_1_mod.o: edycja_1_mod.c edycja_2_mod_main.h edycja_2_mod_edit.h
+	gcc -c -Wall -pedantic edycja_1_mod.c
+
+edycja_1_mod2.o: edycja_1_mod2.c edycja_2_mod_main.h edycja_2_mod_file.h
+	gcc -c -Wall -pedantic edycja_1_mod2.c
+

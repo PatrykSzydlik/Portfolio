@@ -1,0 +1,40 @@
+Vertex 0 distance 0
+0 0 
+Vertex 1 distance 7
+0 19 1 
+Vertex 2 distance 5
+0 2 
+Vertex 3 distance 8
+0 5 3 
+Vertex 4 distance 8
+0 2 4 
+Vertex 5 distance 5
+0 5 
+Vertex 6 distance 6
+0 19 6 
+Vertex 7 distance 9
+0 5 7 
+Vertex 8 distance 8
+0 19 16 8 
+Vertex 9 distance 10
+0 5 3 9 
+Vertex 10 distance 6
+0 5 10 
+Vertex 11 distance 6
+0 11 
+Vertex 12 distance 8
+0 12 
+Vertex 13 distance 6
+0 19 13 
+Vertex 14 distance 8
+0 19 16 14 
+Vertex 15 distance 6
+0 15 
+Vertex 16 distance 7
+0 19 16 
+Vertex 17 distance 9
+0 17 
+Vertex 18 distance 4
+0 18 
+Vertex 19 distance 4
+0 19 

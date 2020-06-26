@@ -1,0 +1,28 @@
+var class_drone =
+[
+    [ "Drone", "class_drone.html#a1a9eb99404f491a1dac299f1c4612095", null ],
+    [ "~Drone", "class_drone.html#aa222ebc0896b057bf4adfc35d2ab0790", null ],
+    [ "Body_edges", "class_drone.html#a5c712f9e0c0025a0d4a2e111099aa493", null ],
+    [ "Change_angle", "class_drone.html#ab450fb2a7a0a01f4950127b5a682c441", null ],
+    [ "Change_speed", "class_drone.html#aa4669fd5d1ba4e531625faf60f109c6a", null ],
+    [ "Check_Collision", "class_drone.html#a6bbbf664c210b856289b29555db3eab2", null ],
+    [ "Display", "class_drone.html#a0274a17379d8c8f5b888967043a0ddcc", null ],
+    [ "Is_This_Sit_Taken", "class_drone.html#af240dc2eae3fb2d9b5f595fb34454c42", null ],
+    [ "Move_distance", "class_drone.html#a3642f174b967829ba9ce233e9301aa41", null ],
+    [ "Move_time", "class_drone.html#af22b5018345477c33a3cfffa0f698b87", null ],
+    [ "Read_angle", "class_drone.html#a980a73f02a74218893bf2fbf8fcc2aa5", null ],
+    [ "Read_movement", "class_drone.html#aeecf922817313ec5aa98f33f1af8d1a0", null ],
+    [ "Read_position", "class_drone.html#a62f3d37da3fa88c88445e2008574715e", null ],
+    [ "Read_speed", "class_drone.html#a37a9029729c51262f9611b974358f958", null ],
+    [ "Rotor_spin_change", "class_drone.html#aeb0427c1ed33a3b40c939a53b88e9e91", null ],
+    [ "Set_In_Motion", "class_drone.html#a551aaf5218277c6a6a8591610345e936", null ],
+    [ "Set_In_Standby", "class_drone.html#ab7740ee69782aa919508a1125d257eba", null ],
+    [ "Show", "class_drone.html#aaa785ff4aaf03e4086671a7439eac1c0", null ],
+    [ "Show_Size", "class_drone.html#a9085f76623d083a14a9c1e3c0864d9fb", null ],
+    [ "Spin_rotors", "class_drone.html#a741ddf55f70a595fe9f21364c15105e8", null ],
+    [ "Update_movement", "class_drone.html#af4d4ab9825c06285e9c53dabcf1eb613", null ],
+    [ "Who_is_there", "class_drone.html#a706ebb45e6aaf7aaae6032efb1db8866", null ],
+    [ "WriteToFile", "class_drone.html#abdb4e2cf48563323f8114f7f77a33b5a", null ],
+    [ "Your_Size", "class_drone.html#a6b193d1964545a5b3965d848c4f9ad1c", null ],
+    [ "Fabric", "class_drone.html#a416fce698dc460e6f1c7cb6ed7234e72", null ]
+];

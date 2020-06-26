@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Algorytmy sortujące: Plik źródłowy time_measurements.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="sorting_alhorithms_logo2.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Algorytmy sortujące
+   &#160;<span id="projectnumber">Patryk Szydlik</span>
+   </div>
+   <div id="projectbrief">Algorytmy sortowania szybkiego, przez scalanie oraz introspektywnego</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('time__measurements_8hh_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">time_measurements.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="time__measurements_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classtime__measure.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classtime__measure.html">time_measure</a>{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classtime__measure.html#ac0e399fe6dd9dbd9a13263496b0981b2">   17</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classtime__measure.html#ac0e399fe6dd9dbd9a13263496b0981b2">hours</a>;      </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">   18</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>;    </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>;    </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">   20</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>;   </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">useconds</a>;   </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classtime__measure.html#a5fe79daa6d9c891e4aba50135884e4f3">   27</a></span>&#160;    <a class="code" href="classtime__measure.html#a5fe79daa6d9c891e4aba50135884e4f3">time_measure</a>(){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classtime__measure.html#ac0e399fe6dd9dbd9a13263496b0981b2">hours</a>=0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>=0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>=0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>=0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">useconds</a>=0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classtime__measure.html#a5bdcc5b6101279fcc0ef8b943f55598a">   44</a></span>&#160;    <a class="code" href="classtime__measure.html#a5bdcc5b6101279fcc0ef8b943f55598a">time_measure</a>(<span class="keywordtype">int</span> new_hours,<span class="keywordtype">int</span> new_minutes,<span class="keywordtype">int</span> new_seconds,<span class="keywordtype">int</span> new_mseconds, <span class="keywordtype">int</span> new_useconds){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classtime__measure.html#ac0e399fe6dd9dbd9a13263496b0981b2">hours</a>=new_hours;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>=new_minutes;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>=new_seconds;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>=new_mseconds;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">useconds</a>=new_useconds;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classtime__measure.html#a0dd0fb103cd9c95bc056ae546e2a00d5">update_time</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classtime__measure.html#a02580156450ddd4f8b2d2b9270520e9d">   57</a></span>&#160;    <a class="code" href="classtime__measure.html#a02580156450ddd4f8b2d2b9270520e9d">time_measure</a>(<span class="keyword">const</span> <a class="code" href="classtime__measure.html">time_measure</a> &amp;copied_time){</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classtime__measure.html#ac0e399fe6dd9dbd9a13263496b0981b2">hours</a>=copied_time.<a class="code" href="classtime__measure.html#ac0e399fe6dd9dbd9a13263496b0981b2">hours</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>=copied_time.<a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>=copied_time.<a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>=copied_time.<a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">useconds</a>=copied_time.<a class="code" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">useconds</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classtime__measure.html#a0dd0fb103cd9c95bc056ae546e2a00d5">   71</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtime__measure.html#a0dd0fb103cd9c95bc056ae546e2a00d5">update_time</a>(){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">useconds</a>&gt;=1000){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>+=<a class="code" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">useconds</a>/1000;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">useconds</a>=<a class="code" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">useconds</a>%1000;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        };</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>&gt;=1000){</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>+=<a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>/1000;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>=<a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>%1000;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        };</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>&gt;=60){</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>+=<a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>/60;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>=<a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>%60;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>&gt;=60){</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="classtime__measure.html#ac0e399fe6dd9dbd9a13263496b0981b2">hours</a>+=<a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>/60;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>=<a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>%60;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        };</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classtime__measure.html#ab90518591477f6af32d2dbd31c950764">   95</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtime__measure.html#ab90518591477f6af32d2dbd31c950764">add_useconds</a>(<span class="keywordtype">int</span> new_useconds){</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">useconds</a>+=new_useconds;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="classtime__measure.html#a0dd0fb103cd9c95bc056ae546e2a00d5">update_time</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classtime__measure.html#abb6e9e2ba5ff34eb58a322dfc1060ffb">  105</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtime__measure.html#abb6e9e2ba5ff34eb58a322dfc1060ffb">add_mseconds</a>(<span class="keywordtype">int</span> new_mseconds){</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>+=new_mseconds;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="classtime__measure.html#a0dd0fb103cd9c95bc056ae546e2a00d5">update_time</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classtime__measure.html#a12b895e2ad1f49bbe31baf2469bb6e39">  115</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtime__measure.html#a12b895e2ad1f49bbe31baf2469bb6e39">add_seconds</a>(<span class="keywordtype">int</span> new_seconds){</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>+=new_seconds;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="classtime__measure.html#a0dd0fb103cd9c95bc056ae546e2a00d5">update_time</a>();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classtime__measure.html#abf1c3c5a8ac79a6c891a1a39a2b2e73d">  123</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtime__measure.html#abf1c3c5a8ac79a6c891a1a39a2b2e73d">display</a>(){</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classtime__measure.html#ac0e399fe6dd9dbd9a13263496b0981b2">hours</a>){std::cout&lt;&lt;<a class="code" href="classtime__measure.html#ac0e399fe6dd9dbd9a13263496b0981b2">hours</a>&lt;&lt;<span class="stringliteral">&quot; h &quot;</span>;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>){std::cout&lt;&lt;<a class="code" href="classtime__measure.html#a169e8f65746182068c84a78135db9168">minutes</a>&lt;&lt;<span class="stringliteral">&quot; min &quot;</span>;};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>){std::cout&lt;&lt;<a class="code" href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">seconds</a>&lt;&lt;<span class="stringliteral">&quot; sec &quot;</span>;};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>){std::cout&lt;&lt;<a class="code" href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">mseconds</a>&lt;&lt;<span class="stringliteral">&quot; msec &quot;</span>;};</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        std::cout&lt;&lt;<a class="code" href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">useconds</a>&lt;&lt;<span class="stringliteral">&quot; usec &quot;</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclasstime__measure_html_ab90518591477f6af32d2dbd31c950764"><div class="ttname"><a href="classtime__measure.html#ab90518591477f6af32d2dbd31c950764">time_measure::add_useconds</a></div><div class="ttdeci">void add_useconds(int new_useconds)</div><div class="ttdoc">Funkcja dodawania mikrosekund do mierzonego czasu.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00095">time_measurements.hh:95</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_a5fe79daa6d9c891e4aba50135884e4f3"><div class="ttname"><a href="classtime__measure.html#a5fe79daa6d9c891e4aba50135884e4f3">time_measure::time_measure</a></div><div class="ttdeci">time_measure()</div><div class="ttdoc">Konstruktor domyślny z zerowymi wartościami poczatkowymi.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00027">time_measurements.hh:27</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_a0dd0fb103cd9c95bc056ae546e2a00d5"><div class="ttname"><a href="classtime__measure.html#a0dd0fb103cd9c95bc056ae546e2a00d5">time_measure::update_time</a></div><div class="ttdeci">void update_time()</div><div class="ttdoc">Funkcja sprawdza przepełnienie zmiennych.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00071">time_measurements.hh:71</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_abb6e9e2ba5ff34eb58a322dfc1060ffb"><div class="ttname"><a href="classtime__measure.html#abb6e9e2ba5ff34eb58a322dfc1060ffb">time_measure::add_mseconds</a></div><div class="ttdeci">void add_mseconds(int new_mseconds)</div><div class="ttdoc">Funkcja dodawania milisekund do mierzonego czasu.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00105">time_measurements.hh:105</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_a5bdcc5b6101279fcc0ef8b943f55598a"><div class="ttname"><a href="classtime__measure.html#a5bdcc5b6101279fcc0ef8b943f55598a">time_measure::time_measure</a></div><div class="ttdeci">time_measure(int new_hours, int new_minutes, int new_seconds, int new_mseconds, int new_useconds)</div><div class="ttdoc">Konstruktor z zadanymi wartościami początkowymi.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00044">time_measurements.hh:44</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_ac057b04234a05863d698538d6bb30a94"><div class="ttname"><a href="classtime__measure.html#ac057b04234a05863d698538d6bb30a94">time_measure::mseconds</a></div><div class="ttdeci">int mseconds</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00020">time_measurements.hh:20</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_a02580156450ddd4f8b2d2b9270520e9d"><div class="ttname"><a href="classtime__measure.html#a02580156450ddd4f8b2d2b9270520e9d">time_measure::time_measure</a></div><div class="ttdeci">time_measure(const time_measure &amp;copied_time)</div><div class="ttdoc">Konstruktor kopiujący.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00057">time_measurements.hh:57</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_a12b895e2ad1f49bbe31baf2469bb6e39"><div class="ttname"><a href="classtime__measure.html#a12b895e2ad1f49bbe31baf2469bb6e39">time_measure::add_seconds</a></div><div class="ttdeci">void add_seconds(int new_seconds)</div><div class="ttdoc">Funkcja dodawania sekund do mierzonego czasu.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00115">time_measurements.hh:115</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_ab70985ca609f42fbae19332af517b600"><div class="ttname"><a href="classtime__measure.html#ab70985ca609f42fbae19332af517b600">time_measure::seconds</a></div><div class="ttdeci">int seconds</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00019">time_measurements.hh:19</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_a2dc3e22b800407b95a376971a56a5e9f"><div class="ttname"><a href="classtime__measure.html#a2dc3e22b800407b95a376971a56a5e9f">time_measure::useconds</a></div><div class="ttdeci">int useconds</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00021">time_measurements.hh:21</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_a169e8f65746182068c84a78135db9168"><div class="ttname"><a href="classtime__measure.html#a169e8f65746182068c84a78135db9168">time_measure::minutes</a></div><div class="ttdeci">int minutes</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00018">time_measurements.hh:18</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_ac0e399fe6dd9dbd9a13263496b0981b2"><div class="ttname"><a href="classtime__measure.html#ac0e399fe6dd9dbd9a13263496b0981b2">time_measure::hours</a></div><div class="ttdeci">int hours</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00017">time_measurements.hh:17</a></div></div>
+<div class="ttc" id="aclasstime__measure_html_abf1c3c5a8ac79a6c891a1a39a2b2e73d"><div class="ttname"><a href="classtime__measure.html#abf1c3c5a8ac79a6c891a1a39a2b2e73d">time_measure::display</a></div><div class="ttdeci">void display()</div><div class="ttdoc">Funkcja do wyświetlania zmierzonego czasu.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00123">time_measurements.hh:123</a></div></div>
+<div class="ttc" id="aclasstime__measure_html"><div class="ttname"><a href="classtime__measure.html">time_measure</a></div><div class="ttdoc">Klasa time_measure przechowująca wartości mierzonego czasu.</div><div class="ttdef"><b>Definition:</b> <a href="time__measurements_8hh_source.html#l00015">time_measurements.hh:15</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4aa64b0872d36146e049722e293482e3.html">prj</a></li><li class="navelem"><a class="el" href="dir_72345776cd6700fb0dedb8f1faaa0c00.html">inc</a></li><li class="navelem"><a class="el" href="time__measurements_8hh.html">time_measurements.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

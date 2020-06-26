@@ -1,0 +1,12 @@
+<map id="/home/p_szydlik/Pulpit/Zadanie 7/prj/inc/Object3D.hh" name="/home/p_szydlik/Pulpit/Zadanie 7/prj/inc/Object3D.hh">
+<area shape="rect" id="node2" href="$_body_8hh.html" title="Zawiera klase i metody obslugujace kadłub. " alt="" coords="206,184,381,225"/>
+<area shape="rect" id="node7" href="$_cuboid_8hh.html" title="Definiuje prostopadłościan na podstawie wzorca. " alt="" coords="331,95,517,136"/>
+<area shape="rect" id="node8" href="$_obstacle_8hh.html" title="Zawiera klase i metody obslugujace przeszkode. " alt="" coords="405,184,601,225"/>
+<area shape="rect" id="node9" href="$_window_8hh.html" title="Zawiera klase i metody obslugujace przeszkode. " alt="" coords="499,273,690,315"/>
+<area shape="rect" id="node10" href="$_rotor_8hh.html" title="Zawiera klase i metody obslugujace rotor. " alt="" coords="5,184,181,225"/>
+<area shape="rect" id="node11" href="$_observer_8hh.html" title="/home/p_szydlik/Pulpit\l/Zadanie 7/prj/inc/Observer.hh" alt="" coords="676,95,873,136"/>
+<area shape="rect" id="node3" href="$_drone_8hh.html" title="Zawiera klase i metody obslugujace drona. " alt="" coords="204,273,383,315"/>
+<area shape="rect" id="node4" href="$_fabric_8hh.html" title="/home/p_szydlik/Pulpit\l/Zadanie 7/prj/inc/Fabric.hh" alt="" coords="371,363,551,404"/>
+<area shape="rect" id="node5" href="$_scene_8hh.html" title="Zawiera klase i metody obslugujace scenerie. " alt="" coords="371,452,552,493"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="Glowny plik zawierajacy wywolanie menu i funkcji zewnetrznych. " alt="" coords="371,541,551,583"/>
+</map>

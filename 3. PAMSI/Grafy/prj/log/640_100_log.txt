@@ -1,0 +1,1008 @@
+START OF PROGRAM 
+Repetition 1 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_1_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_1_640_100_route.txt 
+Repetition 2 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_2_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_2_640_100_route.txt 
+Repetition 3 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_3_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_3_640_100_route.txt 
+Repetition 4 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_4_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_4_640_100_route.txt 
+Repetition 5 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_5_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_5_640_100_route.txt 
+Repetition 6 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_6_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_6_640_100_route.txt 
+Repetition 7 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_7_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_7_640_100_route.txt 
+Repetition 8 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_8_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_8_640_100_route.txt 
+Repetition 9 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_9_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_9_640_100_route.txt 
+Repetition 10 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_10_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_10_640_100_route.txt 
+Repetition 11 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_11_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_11_640_100_route.txt 
+Repetition 12 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_12_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_12_640_100_route.txt 
+Repetition 13 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_13_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_13_640_100_route.txt 
+Repetition 14 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_14_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_14_640_100_route.txt 
+Repetition 15 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_15_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_15_640_100_route.txt 
+Repetition 16 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_16_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_16_640_100_route.txt 
+Repetition 17 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_17_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_17_640_100_route.txt 
+Repetition 18 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_18_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_18_640_100_route.txt 
+Repetition 19 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_19_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_19_640_100_route.txt 
+Repetition 20 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_20_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_20_640_100_route.txt 
+Repetition 21 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_21_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_21_640_100_route.txt 
+Repetition 22 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_22_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_22_640_100_route.txt 
+Repetition 23 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_23_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_23_640_100_route.txt 
+Repetition 24 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_24_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_24_640_100_route.txt 
+Repetition 25 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_25_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_25_640_100_route.txt 
+Repetition 26 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_26_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_26_640_100_route.txt 
+Repetition 27 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_27_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_27_640_100_route.txt 
+Repetition 28 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_28_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_28_640_100_route.txt 
+Repetition 29 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_29_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_29_640_100_route.txt 
+Repetition 30 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_30_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_30_640_100_route.txt 
+Repetition 31 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_31_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_31_640_100_route.txt 
+Repetition 32 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_32_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_32_640_100_route.txt 
+Repetition 33 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_33_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_33_640_100_route.txt 
+Repetition 34 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_34_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_34_640_100_route.txt 
+Repetition 35 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_35_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_35_640_100_route.txt 
+Repetition 36 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_36_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_36_640_100_route.txt 
+Repetition 37 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_37_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_37_640_100_route.txt 
+Repetition 38 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_38_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_38_640_100_route.txt 
+Repetition 39 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_39_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_39_640_100_route.txt 
+Repetition 40 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_40_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_40_640_100_route.txt 
+Repetition 41 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_41_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_41_640_100_route.txt 
+Repetition 42 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_42_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_42_640_100_route.txt 
+Repetition 43 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_43_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_43_640_100_route.txt 
+Repetition 44 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_44_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_44_640_100_route.txt 
+Repetition 45 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_45_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_45_640_100_route.txt 
+Repetition 46 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_46_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_46_640_100_route.txt 
+Repetition 47 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_47_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_47_640_100_route.txt 
+Repetition 48 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_48_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_48_640_100_route.txt 
+Repetition 49 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_49_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_49_640_100_route.txt 
+Repetition 50 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_50_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_50_640_100_route.txt 
+Repetition 51 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_51_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_51_640_100_route.txt 
+Repetition 52 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_52_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_52_640_100_route.txt 
+Repetition 53 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_53_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_53_640_100_route.txt 
+Repetition 54 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_54_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_54_640_100_route.txt 
+Repetition 55 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_55_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_55_640_100_route.txt 
+Repetition 56 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_56_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_56_640_100_route.txt 
+Repetition 57 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_57_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_57_640_100_route.txt 
+Repetition 58 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_58_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_58_640_100_route.txt 
+Repetition 59 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_59_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_59_640_100_route.txt 
+Repetition 60 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_60_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_60_640_100_route.txt 
+Repetition 61 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_61_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_61_640_100_route.txt 
+Repetition 62 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_62_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_62_640_100_route.txt 
+Repetition 63 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_63_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_63_640_100_route.txt 
+Repetition 64 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_64_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_64_640_100_route.txt 
+Repetition 65 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_65_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_65_640_100_route.txt 
+Repetition 66 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_66_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_66_640_100_route.txt 
+Repetition 67 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_67_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_67_640_100_route.txt 
+Repetition 68 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_68_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_68_640_100_route.txt 
+Repetition 69 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_69_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_69_640_100_route.txt 
+Repetition 70 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_70_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_70_640_100_route.txt 
+Repetition 71 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_71_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_71_640_100_route.txt 
+Repetition 72 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_72_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_72_640_100_route.txt 
+Repetition 73 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_73_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_73_640_100_route.txt 
+Repetition 74 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_74_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_74_640_100_route.txt 
+Repetition 75 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_75_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_75_640_100_route.txt 
+Repetition 76 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_76_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_76_640_100_route.txt 
+Repetition 77 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_77_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_77_640_100_route.txt 
+Repetition 78 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_78_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_78_640_100_route.txt 
+Repetition 79 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_79_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_79_640_100_route.txt 
+Repetition 80 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_80_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_80_640_100_route.txt 
+Repetition 81 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_81_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_81_640_100_route.txt 
+Repetition 82 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_82_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_82_640_100_route.txt 
+Repetition 83 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_83_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_83_640_100_route.txt 
+Repetition 84 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_84_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_84_640_100_route.txt 
+Repetition 85 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_85_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_85_640_100_route.txt 
+Repetition 86 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_86_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_86_640_100_route.txt 
+Repetition 87 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_87_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_87_640_100_route.txt 
+Repetition 88 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_88_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_88_640_100_route.txt 
+Repetition 89 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_89_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_89_640_100_route.txt 
+Repetition 90 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_90_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_90_640_100_route.txt 
+Repetition 91 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_91_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_91_640_100_route.txt 
+Repetition 92 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_92_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_92_640_100_route.txt 
+Repetition 93 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_93_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_93_640_100_route.txt 
+Repetition 94 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_94_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_94_640_100_route.txt 
+Repetition 95 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_95_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_95_640_100_route.txt 
+Repetition 96 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_96_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_96_640_100_route.txt 
+Repetition 97 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_97_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_97_640_100_route.txt 
+Repetition 98 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_98_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_98_640_100_route.txt 
+Repetition 99 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_99_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_99_640_100_route.txt 
+Repetition 100 
+  Generating data set : nV=640 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_100_640_100_route.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_100_640_100_route.txt 
+ 
+
+
+     DATA GENERATION TIME   =   115992
+     MATRIX DIJKSTRA TIME   =   105595
+     LIST DIJKSTRA TIME     =   58306
+END OF PROGRAM 

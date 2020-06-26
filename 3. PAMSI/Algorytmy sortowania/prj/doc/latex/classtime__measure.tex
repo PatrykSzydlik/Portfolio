@@ -1,0 +1,227 @@
+\hypertarget{classtime__measure}{}\doxysection{Dokumentacja klasy time\+\_\+measure}
+\label{classtime__measure}\index{time\_measure@{time\_measure}}
+
+
+Klasa \mbox{\hyperlink{classtime__measure}{time\+\_\+measure}} przechowująca wartości mierzonego czasu.  
+
+
+
+
+{\ttfamily \#include $<$time\+\_\+measurements.\+hh$>$}
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtime__measure_a5fe79daa6d9c891e4aba50135884e4f3}{time\+\_\+measure}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny z zerowymi wartościami poczatkowymi. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtime__measure_a5bdcc5b6101279fcc0ef8b943f55598a}{time\+\_\+measure}} (int new\+\_\+hours, int new\+\_\+minutes, int new\+\_\+seconds, int new\+\_\+mseconds, int new\+\_\+useconds)
+\begin{DoxyCompactList}\small\item\em Konstruktor z zadanymi wartościami początkowymi. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtime__measure_a02580156450ddd4f8b2d2b9270520e9d}{time\+\_\+measure}} (const \mbox{\hyperlink{classtime__measure}{time\+\_\+measure}} \&copied\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiujący. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtime__measure_a0dd0fb103cd9c95bc056ae546e2a00d5}{update\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza przepełnienie zmiennych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtime__measure_ab90518591477f6af32d2dbd31c950764}{add\+\_\+useconds}} (int new\+\_\+useconds)
+\begin{DoxyCompactList}\small\item\em Funkcja dodawania mikrosekund do mierzonego czasu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtime__measure_abb6e9e2ba5ff34eb58a322dfc1060ffb}{add\+\_\+mseconds}} (int new\+\_\+mseconds)
+\begin{DoxyCompactList}\small\item\em Funkcja dodawania milisekund do mierzonego czasu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtime__measure_a12b895e2ad1f49bbe31baf2469bb6e39}{add\+\_\+seconds}} (int new\+\_\+seconds)
+\begin{DoxyCompactList}\small\item\em Funkcja dodawania sekund do mierzonego czasu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtime__measure_abf1c3c5a8ac79a6c891a1a39a2b2e73d}{display}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja do wyświetlania zmierzonego czasu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtime__measure_ac0e399fe6dd9dbd9a13263496b0981b2}{hours}}
+\item 
+int \mbox{\hyperlink{classtime__measure_a169e8f65746182068c84a78135db9168}{minutes}}
+\item 
+int \mbox{\hyperlink{classtime__measure_ab70985ca609f42fbae19332af517b600}{seconds}}
+\item 
+int \mbox{\hyperlink{classtime__measure_ac057b04234a05863d698538d6bb30a94}{mseconds}}
+\item 
+int \mbox{\hyperlink{classtime__measure_a2dc3e22b800407b95a376971a56a5e9f}{useconds}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Obsługuje zakres w godzinach, minutach, sekundach, milisekundach i mikrosekundach. 
+
+Definicja w linii 15 pliku time\+\_\+measurements.\+hh.
+
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classtime__measure_a5fe79daa6d9c891e4aba50135884e4f3}\label{classtime__measure_a5fe79daa6d9c891e4aba50135884e4f3}} 
+\index{time\_measure@{time\_measure}!time\_measure@{time\_measure}}
+\index{time\_measure@{time\_measure}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{time\_measure()}{time\_measure()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily time\+\_\+measure\+::time\+\_\+measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definicja w linii 27 pliku time\+\_\+measurements.\+hh.
+
+\mbox{\Hypertarget{classtime__measure_a5bdcc5b6101279fcc0ef8b943f55598a}\label{classtime__measure_a5bdcc5b6101279fcc0ef8b943f55598a}} 
+\index{time\_measure@{time\_measure}!time\_measure@{time\_measure}}
+\index{time\_measure@{time\_measure}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{time\_measure()}{time\_measure()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily time\+\_\+measure\+::time\+\_\+measure (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+hours,  }\item[{int}]{new\+\_\+minutes,  }\item[{int}]{new\+\_\+seconds,  }\item[{int}]{new\+\_\+mseconds,  }\item[{int}]{new\+\_\+useconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em new\+\_\+hours} & -\/ początkowa liczba godzin \\
+\hline
+\mbox{\texttt{ in}}  & {\em new\+\_\+minutes} & -\/ początkowa liczba minut \\
+\hline
+\mbox{\texttt{ in}}  & {\em new\+\_\+seconds} & -\/ początkowa liczba sekund \\
+\hline
+\mbox{\texttt{ in}}  & {\em new\+\_\+mseconds} & -\/ początkowa liczba milisekund \\
+\hline
+\mbox{\texttt{ in}}  & {\em new\+\_\+useconds} & -\/ początkowa liczba mikrosekund \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 44 pliku time\+\_\+measurements.\+hh.
+
+\mbox{\Hypertarget{classtime__measure_a02580156450ddd4f8b2d2b9270520e9d}\label{classtime__measure_a02580156450ddd4f8b2d2b9270520e9d}} 
+\index{time\_measure@{time\_measure}!time\_measure@{time\_measure}}
+\index{time\_measure@{time\_measure}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{time\_measure()}{time\_measure()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily time\+\_\+measure\+::time\+\_\+measure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtime__measure}{time\+\_\+measure}} \&}]{copied\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em copied\+\_\+time} & -\/ dane do skopiowania \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 57 pliku time\+\_\+measurements.\+hh.
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classtime__measure_abb6e9e2ba5ff34eb58a322dfc1060ffb}\label{classtime__measure_abb6e9e2ba5ff34eb58a322dfc1060ffb}} 
+\index{time\_measure@{time\_measure}!add\_mseconds@{add\_mseconds}}
+\index{add\_mseconds@{add\_mseconds}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{add\_mseconds()}{add\_mseconds()}}
+{\footnotesize\ttfamily void time\+\_\+measure\+::add\+\_\+mseconds (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+mseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em new\+\_\+mseconds} & -\/ ilość milisekund do dodania \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 105 pliku time\+\_\+measurements.\+hh.
+
+\mbox{\Hypertarget{classtime__measure_a12b895e2ad1f49bbe31baf2469bb6e39}\label{classtime__measure_a12b895e2ad1f49bbe31baf2469bb6e39}} 
+\index{time\_measure@{time\_measure}!add\_seconds@{add\_seconds}}
+\index{add\_seconds@{add\_seconds}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{add\_seconds()}{add\_seconds()}}
+{\footnotesize\ttfamily void time\+\_\+measure\+::add\+\_\+seconds (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em new\+\_\+seconds} & -\/ ilość sekund do dodania \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 115 pliku time\+\_\+measurements.\+hh.
+
+\mbox{\Hypertarget{classtime__measure_ab90518591477f6af32d2dbd31c950764}\label{classtime__measure_ab90518591477f6af32d2dbd31c950764}} 
+\index{time\_measure@{time\_measure}!add\_useconds@{add\_useconds}}
+\index{add\_useconds@{add\_useconds}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{add\_useconds()}{add\_useconds()}}
+{\footnotesize\ttfamily void time\+\_\+measure\+::add\+\_\+useconds (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+useconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em new\+\_\+useconds} & -\/ ilość mikrosekund do dodania \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 95 pliku time\+\_\+measurements.\+hh.
+
+\mbox{\Hypertarget{classtime__measure_abf1c3c5a8ac79a6c891a1a39a2b2e73d}\label{classtime__measure_abf1c3c5a8ac79a6c891a1a39a2b2e73d}} 
+\index{time\_measure@{time\_measure}!display@{display}}
+\index{display@{display}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void time\+\_\+measure\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definicja w linii 123 pliku time\+\_\+measurements.\+hh.
+
+\mbox{\Hypertarget{classtime__measure_a0dd0fb103cd9c95bc056ae546e2a00d5}\label{classtime__measure_a0dd0fb103cd9c95bc056ae546e2a00d5}} 
+\index{time\_measure@{time\_measure}!update\_time@{update\_time}}
+\index{update\_time@{update\_time}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{update\_time()}{update\_time()}}
+{\footnotesize\ttfamily void time\+\_\+measure\+::update\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+W przypadku gdy wartości niższego rzędu są przepełnione to funkcja przypisuje wartość do wyższej zmiennej. Np. gdy jest ponad 60 sekund to dopisuje 1 minutę więcej i zmienia wartość sekund do zakreso 0-\/60 
+
+Definicja w linii 71 pliku time\+\_\+measurements.\+hh.
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{classtime__measure_ac0e399fe6dd9dbd9a13263496b0981b2}\label{classtime__measure_ac0e399fe6dd9dbd9a13263496b0981b2}} 
+\index{time\_measure@{time\_measure}!hours@{hours}}
+\index{hours@{hours}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{hours}{hours}}
+{\footnotesize\ttfamily int time\+\_\+measure\+::hours\hspace{0.3cm}{\ttfamily [private]}}
+
+ilość godzin 
+
+Definicja w linii 17 pliku time\+\_\+measurements.\+hh.
+
+\mbox{\Hypertarget{classtime__measure_a169e8f65746182068c84a78135db9168}\label{classtime__measure_a169e8f65746182068c84a78135db9168}} 
+\index{time\_measure@{time\_measure}!minutes@{minutes}}
+\index{minutes@{minutes}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{minutes}{minutes}}
+{\footnotesize\ttfamily int time\+\_\+measure\+::minutes\hspace{0.3cm}{\ttfamily [private]}}
+
+ilość minut 
+
+Definicja w linii 18 pliku time\+\_\+measurements.\+hh.
+
+\mbox{\Hypertarget{classtime__measure_ac057b04234a05863d698538d6bb30a94}\label{classtime__measure_ac057b04234a05863d698538d6bb30a94}} 
+\index{time\_measure@{time\_measure}!mseconds@{mseconds}}
+\index{mseconds@{mseconds}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{mseconds}{mseconds}}
+{\footnotesize\ttfamily int time\+\_\+measure\+::mseconds\hspace{0.3cm}{\ttfamily [private]}}
+
+ilość milisekund 
+
+Definicja w linii 20 pliku time\+\_\+measurements.\+hh.
+
+\mbox{\Hypertarget{classtime__measure_ab70985ca609f42fbae19332af517b600}\label{classtime__measure_ab70985ca609f42fbae19332af517b600}} 
+\index{time\_measure@{time\_measure}!seconds@{seconds}}
+\index{seconds@{seconds}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{seconds}{seconds}}
+{\footnotesize\ttfamily int time\+\_\+measure\+::seconds\hspace{0.3cm}{\ttfamily [private]}}
+
+ilość sekund 
+
+Definicja w linii 19 pliku time\+\_\+measurements.\+hh.
+
+\mbox{\Hypertarget{classtime__measure_a2dc3e22b800407b95a376971a56a5e9f}\label{classtime__measure_a2dc3e22b800407b95a376971a56a5e9f}} 
+\index{time\_measure@{time\_measure}!useconds@{useconds}}
+\index{useconds@{useconds}!time\_measure@{time\_measure}}
+\doxysubsubsection{\texorpdfstring{useconds}{useconds}}
+{\footnotesize\ttfamily int time\+\_\+measure\+::useconds\hspace{0.3cm}{\ttfamily [private]}}
+
+ilość mikrosekund 
+
+Definicja w linii 21 pliku time\+\_\+measurements.\+hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{time__measurements_8hh}{time\+\_\+measurements.\+hh}}\end{DoxyCompactItemize}

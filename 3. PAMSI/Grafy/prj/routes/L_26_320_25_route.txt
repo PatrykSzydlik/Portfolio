@@ -1,0 +1,640 @@
+Vertex 0 distance 0
+0 0 
+Vertex 1 distance 35
+0 262 307 168 206 149 24 1 
+Vertex 2 distance 26
+0 29 180 276 181 2 
+Vertex 3 distance 22
+0 185 3 
+Vertex 4 distance 20
+0 262 237 4 
+Vertex 5 distance 30
+0 262 160 5 
+Vertex 6 distance 29
+0 262 160 260 311 258 50 6 
+Vertex 7 distance 28
+0 185 277 123 42 7 
+Vertex 8 distance 34
+0 262 307 168 66 8 
+Vertex 9 distance 26
+0 262 245 165 9 
+Vertex 10 distance 36
+0 269 106 242 314 10 
+Vertex 11 distance 32
+0 262 96 15 203 261 175 11 
+Vertex 12 distance 30
+0 262 160 199 54 12 
+Vertex 13 distance 19
+0 262 96 15 13 
+Vertex 14 distance 15
+0 262 307 168 14 
+Vertex 15 distance 11
+0 262 96 15 
+Vertex 16 distance 37
+0 185 277 123 42 7 16 
+Vertex 17 distance 22
+0 17 
+Vertex 18 distance 17
+0 29 37 18 
+Vertex 19 distance 22
+0 185 299 19 
+Vertex 20 distance 21
+0 262 96 183 20 
+Vertex 21 distance 29
+0 262 96 15 13 21 
+Vertex 22 distance 25
+0 185 299 22 
+Vertex 23 distance 31
+0 262 160 117 255 23 
+Vertex 24 distance 30
+0 262 307 168 206 149 24 
+Vertex 25 distance 27
+0 262 96 15 13 25 
+Vertex 26 distance 30
+0 262 245 238 28 45 26 
+Vertex 27 distance 26
+0 262 245 263 280 162 27 
+Vertex 28 distance 23
+0 262 245 238 28 
+Vertex 29 distance 8
+0 29 
+Vertex 30 distance 26
+0 75 179 30 
+Vertex 31 distance 33
+0 185 31 
+Vertex 32 distance 30
+0 262 96 183 32 
+Vertex 33 distance 45
+0 262 96 15 13 70 286 33 
+Vertex 34 distance 36
+0 262 160 317 303 230 34 
+Vertex 35 distance 24
+0 147 35 
+Vertex 36 distance 22
+0 262 160 199 163 36 
+Vertex 37 distance 11
+0 29 37 
+Vertex 38 distance 35
+0 262 245 194 295 38 
+Vertex 39 distance 30
+0 29 37 18 127 157 39 
+Vertex 40 distance 38
+0 262 160 117 216 40 
+Vertex 41 distance 30
+0 262 160 117 241 84 316 41 
+Vertex 42 distance 23
+0 185 277 123 42 
+Vertex 43 distance 26
+0 262 245 263 43 
+Vertex 44 distance 32
+0 262 245 86 52 44 
+Vertex 45 distance 28
+0 262 245 238 28 45 
+Vertex 46 distance 32
+0 262 96 15 13 70 286 46 
+Vertex 47 distance 23
+0 262 160 117 241 47 
+Vertex 48 distance 12
+0 262 48 
+Vertex 49 distance 17
+0 185 277 49 
+Vertex 50 distance 26
+0 262 160 260 311 258 50 
+Vertex 51 distance 43
+0 29 180 276 301 51 
+Vertex 52 distance 24
+0 262 245 86 52 
+Vertex 53 distance 28
+0 262 245 263 280 162 296 53 
+Vertex 54 distance 14
+0 262 160 199 54 
+Vertex 55 distance 16
+0 55 
+Vertex 56 distance 22
+0 262 245 238 111 56 
+Vertex 57 distance 30
+0 262 245 238 111 56 129 57 
+Vertex 58 distance 19
+0 262 160 117 67 58 
+Vertex 59 distance 33
+0 262 160 117 255 119 59 
+Vertex 60 distance 25
+0 262 160 260 311 267 60 
+Vertex 61 distance 37
+0 262 160 117 67 83 61 
+Vertex 62 distance 22
+0 262 160 117 255 62 
+Vertex 63 distance 26
+0 185 277 49 78 63 
+Vertex 64 distance 40
+0 262 96 15 13 70 286 46 64 
+Vertex 65 distance 20
+0 29 180 65 
+Vertex 66 distance 26
+0 262 307 168 66 
+Vertex 67 distance 17
+0 262 160 117 67 
+Vertex 68 distance 27
+0 98 68 
+Vertex 69 distance 30
+0 262 160 199 166 124 69 
+Vertex 70 distance 21
+0 262 96 15 13 70 
+Vertex 71 distance 41
+0 262 160 260 311 71 
+Vertex 72 distance 31
+0 262 160 117 216 72 
+Vertex 73 distance 31
+0 262 96 183 73 
+Vertex 74 distance 29
+0 29 37 18 137 136 74 
+Vertex 75 distance 13
+0 75 
+Vertex 76 distance 21
+0 262 96 80 76 
+Vertex 77 distance 27
+0 98 77 
+Vertex 78 distance 20
+0 185 277 49 78 
+Vertex 79 distance 26
+0 17 79 
+Vertex 80 distance 18
+0 262 96 80 
+Vertex 81 distance 18
+0 262 160 317 81 
+Vertex 82 distance 22
+0 262 48 313 82 
+Vertex 83 distance 18
+0 262 160 117 67 83 
+Vertex 84 distance 16
+0 262 160 117 241 84 
+Vertex 85 distance 18
+0 262 307 168 246 85 
+Vertex 86 distance 21
+0 262 245 86 
+Vertex 87 distance 25
+0 55 87 
+Vertex 88 distance 18
+0 29 37 18 88 
+Vertex 89 distance 26
+0 262 245 165 89 
+Vertex 90 distance 34
+0 55 274 90 
+Vertex 91 distance 36
+0 29 37 18 127 182 91 
+Vertex 92 distance 35
+0 29 37 18 137 136 92 
+Vertex 93 distance 28
+0 185 277 123 223 143 93 
+Vertex 94 distance 30
+0 262 48 313 145 94 
+Vertex 95 distance 34
+0 262 160 117 292 204 95 
+Vertex 96 distance 9
+0 262 96 
+Vertex 97 distance 25
+0 75 287 97 
+Vertex 98 distance 13
+0 98 
+Vertex 99 distance 23
+0 262 160 117 241 99 
+Vertex 100 distance 22
+0 262 160 117 241 318 100 
+Vertex 101 distance 27
+0 262 160 317 81 101 
+Vertex 102 distance 32
+0 262 160 317 303 230 102 
+Vertex 103 distance 38
+0 262 96 15 13 25 103 
+Vertex 104 distance 36
+0 262 307 168 246 85 104 
+Vertex 105 distance 22
+0 29 37 105 
+Vertex 106 distance 18
+0 269 106 
+Vertex 107 distance 41
+0 262 160 117 255 23 107 
+Vertex 108 distance 29
+0 185 277 123 223 143 108 
+Vertex 109 distance 19
+0 262 160 199 54 109 
+Vertex 110 distance 28
+0 262 96 15 13 110 
+Vertex 111 distance 21
+0 262 245 238 111 
+Vertex 112 distance 25
+0 269 161 112 
+Vertex 113 distance 14
+0 262 160 117 241 113 
+Vertex 114 distance 26
+0 262 245 238 247 114 
+Vertex 115 distance 29
+0 262 96 183 20 115 
+Vertex 116 distance 20
+0 269 106 116 
+Vertex 117 distance 5
+0 262 160 117 
+Vertex 118 distance 30
+0 262 245 86 118 
+Vertex 119 distance 25
+0 262 160 117 255 119 
+Vertex 120 distance 24
+0 262 160 117 241 47 120 
+Vertex 121 distance 32
+0 29 37 305 121 
+Vertex 122 distance 39
+0 262 160 126 284 122 
+Vertex 123 distance 15
+0 185 277 123 
+Vertex 124 distance 28
+0 262 160 199 166 124 
+Vertex 125 distance 23
+0 29 180 276 227 125 
+Vertex 126 distance 10
+0 262 160 126 
+Vertex 127 distance 21
+0 29 37 18 127 
+Vertex 128 distance 42
+0 262 237 4 128 
+Vertex 129 distance 29
+0 262 245 238 111 56 129 
+Vertex 130 distance 36
+0 262 160 117 241 113 291 130 
+Vertex 131 distance 27
+0 262 237 200 131 
+Vertex 132 distance 22
+0 262 160 117 255 264 132 
+Vertex 133 distance 22
+0 185 277 123 223 133 
+Vertex 134 distance 14
+0 134 
+Vertex 135 distance 36
+0 185 277 123 223 143 108 135 
+Vertex 136 distance 24
+0 29 37 18 137 136 
+Vertex 137 distance 18
+0 29 37 18 137 
+Vertex 138 distance 22
+0 262 160 117 241 113 291 138 
+Vertex 139 distance 41
+0 262 160 117 67 58 139 
+Vertex 140 distance 24
+0 262 160 126 250 140 
+Vertex 141 distance 38
+0 262 245 238 247 141 
+Vertex 142 distance 33
+0 134 209 142 
+Vertex 143 distance 25
+0 185 277 123 223 143 
+Vertex 144 distance 26
+0 262 245 165 144 
+Vertex 145 distance 29
+0 262 48 313 145 
+Vertex 146 distance 31
+0 262 96 146 
+Vertex 147 distance 22
+0 147 
+Vertex 148 distance 20
+0 262 160 117 306 148 
+Vertex 149 distance 15
+0 262 307 168 206 149 
+Vertex 150 distance 23
+0 262 160 117 150 
+Vertex 151 distance 29
+0 185 277 123 223 143 93 151 
+Vertex 152 distance 33
+0 262 96 15 13 152 
+Vertex 153 distance 30
+0 262 96 15 203 153 
+Vertex 154 distance 34
+0 185 154 
+Vertex 155 distance 26
+0 29 180 155 
+Vertex 156 distance 33
+0 262 160 177 159 156 
+Vertex 157 distance 23
+0 29 37 18 127 157 
+Vertex 158 distance 34
+0 262 160 117 67 58 158 
+Vertex 159 distance 29
+0 262 160 177 159 
+Vertex 160 distance 2
+0 262 160 
+Vertex 161 distance 20
+0 269 161 
+Vertex 162 distance 23
+0 262 245 263 280 162 
+Vertex 163 distance 13
+0 262 160 199 163 
+Vertex 164 distance 29
+0 29 37 18 88 164 
+Vertex 165 distance 22
+0 262 245 165 
+Vertex 166 distance 18
+0 262 160 199 166 
+Vertex 167 distance 21
+0 262 307 168 167 
+Vertex 168 distance 11
+0 262 307 168 
+Vertex 169 distance 30
+0 147 35 169 
+Vertex 170 distance 32
+0 185 277 49 78 170 
+Vertex 171 distance 27
+0 262 160 117 306 148 171 
+Vertex 172 distance 50
+0 262 96 80 304 259 207 172 
+Vertex 173 distance 29
+0 173 
+Vertex 174 distance 36
+0 262 96 15 13 70 174 
+Vertex 175 distance 31
+0 262 96 15 203 261 175 
+Vertex 176 distance 29
+0 262 245 238 111 308 219 176 
+Vertex 177 distance 24
+0 262 160 177 
+Vertex 178 distance 41
+0 262 48 313 82 178 
+Vertex 179 distance 20
+0 75 179 
+Vertex 180 distance 15
+0 29 180 
+Vertex 181 distance 19
+0 29 180 276 181 
+Vertex 182 distance 28
+0 29 37 18 127 182 
+Vertex 183 distance 19
+0 262 96 183 
+Vertex 184 distance 40
+0 29 37 18 137 184 
+Vertex 185 distance 9
+0 185 
+Vertex 186 distance 25
+0 186 
+Vertex 187 distance 28
+0 185 277 123 223 143 187 
+Vertex 188 distance 24
+0 262 245 194 188 
+Vertex 189 distance 37
+0 29 189 
+Vertex 190 distance 32
+0 262 245 238 28 45 26 190 
+Vertex 191 distance 15
+0 29 37 191 
+Vertex 192 distance 32
+0 262 160 117 241 84 192 
+Vertex 193 distance 28
+0 262 245 238 111 308 193 
+Vertex 194 distance 21
+0 262 245 194 
+Vertex 195 distance 24
+0 262 160 117 241 318 100 195 
+Vertex 196 distance 31
+0 262 307 168 14 196 
+Vertex 197 distance 37
+0 55 274 90 197 
+Vertex 198 distance 32
+0 262 307 168 206 149 198 
+Vertex 199 distance 6
+0 262 160 199 
+Vertex 200 distance 20
+0 262 237 200 
+Vertex 201 distance 35
+0 185 277 123 42 7 201 
+Vertex 202 distance 34
+0 262 307 168 246 202 
+Vertex 203 distance 21
+0 262 96 15 203 
+Vertex 204 distance 25
+0 262 160 117 292 204 
+Vertex 205 distance 21
+0 262 245 205 
+Vertex 206 distance 14
+0 262 307 168 206 
+Vertex 207 distance 28
+0 262 96 80 304 259 207 
+Vertex 208 distance 31
+0 55 87 208 
+Vertex 209 distance 21
+0 134 209 
+Vertex 210 distance 27
+0 147 35 210 
+Vertex 211 distance 34
+0 262 48 313 145 94 211 
+Vertex 212 distance 31
+0 134 209 212 
+Vertex 213 distance 37
+0 262 160 126 284 213 
+Vertex 214 distance 29
+0 29 180 276 214 
+Vertex 215 distance 27
+0 262 160 126 284 215 
+Vertex 216 distance 20
+0 262 160 117 216 
+Vertex 217 distance 26
+0 186 217 
+Vertex 218 distance 33
+0 262 245 218 
+Vertex 219 distance 27
+0 262 245 238 111 308 219 
+Vertex 220 distance 36
+0 262 245 86 118 220 
+Vertex 221 distance 30
+0 262 160 117 150 221 
+Vertex 222 distance 34
+0 262 245 238 28 45 222 
+Vertex 223 distance 20
+0 185 277 123 223 
+Vertex 224 distance 29
+0 262 160 117 241 318 100 224 
+Vertex 225 distance 23
+0 17 225 
+Vertex 226 distance 32
+0 262 245 86 226 
+Vertex 227 distance 22
+0 29 180 276 227 
+Vertex 228 distance 48
+0 185 154 228 
+Vertex 229 distance 24
+0 262 307 168 229 
+Vertex 230 distance 29
+0 262 160 317 303 230 
+Vertex 231 distance 30
+0 262 245 238 231 
+Vertex 232 distance 29
+0 262 160 199 54 109 232 
+Vertex 233 distance 29
+0 262 96 15 13 25 233 
+Vertex 234 distance 40
+0 185 277 288 234 
+Vertex 235 distance 34
+0 262 160 177 235 
+Vertex 236 distance 24
+0 262 245 86 236 
+Vertex 237 distance 18
+0 262 237 
+Vertex 238 distance 14
+0 262 245 238 
+Vertex 239 distance 37
+0 262 160 117 241 239 
+Vertex 240 distance 29
+0 262 245 238 240 
+Vertex 241 distance 13
+0 262 160 117 241 
+Vertex 242 distance 21
+0 269 106 242 
+Vertex 243 distance 25
+0 262 160 317 303 243 
+Vertex 244 distance 36
+0 262 245 263 244 
+Vertex 245 distance 3
+0 262 245 
+Vertex 246 distance 14
+0 262 307 168 246 
+Vertex 247 distance 23
+0 262 245 238 247 
+Vertex 248 distance 19
+0 269 106 248 
+Vertex 249 distance 23
+0 262 160 117 67 58 249 
+Vertex 250 distance 21
+0 262 160 126 250 
+Vertex 251 distance 23
+0 262 160 260 311 251 
+Vertex 252 distance 25
+0 262 160 260 271 252 
+Vertex 253 distance 32
+0 262 160 177 253 
+Vertex 254 distance 31
+0 262 96 15 13 70 286 254 
+Vertex 255 distance 13
+0 262 160 117 255 
+Vertex 256 distance 31
+0 262 48 297 256 
+Vertex 257 distance 23
+0 75 287 257 
+Vertex 258 distance 23
+0 262 160 260 311 258 
+Vertex 259 distance 25
+0 262 96 80 304 259 
+Vertex 260 distance 20
+0 262 160 260 
+Vertex 261 distance 26
+0 262 96 15 203 261 
+Vertex 262 distance 1
+0 262 
+Vertex 263 distance 8
+0 262 245 263 
+Vertex 264 distance 18
+0 262 160 117 255 264 
+Vertex 265 distance 36
+0 185 277 123 42 7 201 265 
+Vertex 266 distance 31
+0 262 160 117 241 47 120 312 266 
+Vertex 267 distance 22
+0 262 160 260 311 267 
+Vertex 268 distance 35
+0 29 180 276 268 
+Vertex 269 distance 13
+0 269 
+Vertex 270 distance 30
+0 262 307 270 
+Vertex 271 distance 24
+0 262 160 260 271 
+Vertex 272 distance 30
+0 262 160 272 
+Vertex 273 distance 24
+0 262 160 117 241 318 273 
+Vertex 274 distance 20
+0 55 274 
+Vertex 275 distance 42
+0 134 209 142 275 
+Vertex 276 distance 18
+0 29 180 276 
+Vertex 277 distance 12
+0 185 277 
+Vertex 278 distance 39
+0 262 245 278 
+Vertex 279 distance 30
+0 262 160 117 306 279 
+Vertex 280 distance 19
+0 262 245 263 280 
+Vertex 281 distance 24
+0 262 245 263 280 281 
+Vertex 282 distance 28
+0 185 299 282 
+Vertex 283 distance 34
+0 262 160 117 255 283 
+Vertex 284 distance 19
+0 262 160 126 284 
+Vertex 285 distance 26
+0 262 237 4 285 
+Vertex 286 distance 27
+0 262 96 15 13 70 286 
+Vertex 287 distance 14
+0 75 287 
+Vertex 288 distance 29
+0 185 277 288 
+Vertex 289 distance 36
+0 262 160 199 166 289 
+Vertex 290 distance 28
+0 262 307 168 246 85 290 
+Vertex 291 distance 17
+0 262 160 117 241 113 291 
+Vertex 292 distance 17
+0 262 160 117 292 
+Vertex 293 distance 34
+0 269 161 112 293 
+Vertex 294 distance 41
+0 185 277 123 42 294 
+Vertex 295 distance 28
+0 262 245 194 295 
+Vertex 296 distance 24
+0 262 245 263 280 162 296 
+Vertex 297 distance 15
+0 262 48 297 
+Vertex 298 distance 25
+0 262 96 15 13 298 
+Vertex 299 distance 15
+0 185 299 
+Vertex 300 distance 24
+0 29 37 18 127 300 
+Vertex 301 distance 21
+0 29 180 276 301 
+Vertex 302 distance 36
+0 185 154 302 
+Vertex 303 distance 20
+0 262 160 317 303 
+Vertex 304 distance 22
+0 262 96 80 304 
+Vertex 305 distance 19
+0 29 37 305 
+Vertex 306 distance 18
+0 262 160 117 306 
+Vertex 307 distance 4
+0 262 307 
+Vertex 308 distance 22
+0 262 245 238 111 308 
+Vertex 309 distance 28
+0 262 160 117 241 47 120 312 309 
+Vertex 310 distance 38
+0 185 299 22 310 
+Vertex 311 distance 21
+0 262 160 260 311 
+Vertex 312 distance 27
+0 262 160 117 241 47 120 312 
+Vertex 313 distance 20
+0 262 48 313 
+Vertex 314 distance 28
+0 269 106 242 314 
+Vertex 315 distance 46
+0 262 245 263 280 162 296 53 315 
+Vertex 316 distance 21
+0 262 160 117 241 84 316 
+Vertex 317 distance 15
+0 262 160 317 
+Vertex 318 distance 21
+0 262 160 117 241 318 
+Vertex 319 distance 33
+0 319 

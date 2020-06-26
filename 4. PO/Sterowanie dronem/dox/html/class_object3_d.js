@@ -1,0 +1,27 @@
+var class_object3_d =
+[
+    [ "Object3D", "class_object3_d.html#ae3a1b17fb43ab59f5cf7b0ee21b9120b", null ],
+    [ "~Object3D", "class_object3_d.html#a0e0c43c27593f99b303319cbb54b9c50", null ],
+    [ "center", "class_object3_d.html#a2487c956ff287d9202acc13ffce41608", null ],
+    [ "ChangeName", "class_object3_d.html#ac95b0172cf86791be4ae59a30ccf9351", null ],
+    [ "Check_Collision", "class_object3_d.html#a34c8cadc769df300bb02cb48c7182f47", null ],
+    [ "Copy_param", "class_object3_d.html#a9a06e5f0f41544466229454696f3b514", null ],
+    [ "Display", "class_object3_d.html#a8c07046cf73a8b9b345315093372ea9d", null ],
+    [ "give_rotation", "class_object3_d.html#ab04d83648af9f0fc6c6b4a1bae92681e", null ],
+    [ "ID", "class_object3_d.html#adcf71b9d4dd794050bfe529efdd35f52", null ],
+    [ "Is_This_Sit_Taken", "class_object3_d.html#aa1940ced6df3ac6b36b51a1d78e9e3fa", null ],
+    [ "Move", "class_object3_d.html#a4d25c2c8ffe54fa63a24d10448b4b3ce", null ],
+    [ "name", "class_object3_d.html#a71a0f886e8d1b3979fddd634fe6b103b", null ],
+    [ "Read_position", "class_object3_d.html#afa015950be51121c823f53e4dd509f13", null ],
+    [ "Read_rotation", "class_object3_d.html#acd87cd0d196b1dba73bcdb8a960063f2", null ],
+    [ "Show_Size", "class_object3_d.html#a2c673ed458e78267b82d8512ea2092d1", null ],
+    [ "Turn", "class_object3_d.html#aac79f43a5400a7d87b193c7e1b8f7165", null ],
+    [ "Turn_undo", "class_object3_d.html#ab68643b330c9199955effbf500800715", null ],
+    [ "Who_is_there", "class_object3_d.html#af9e7d0083a69884a4496939c23e375cb", null ],
+    [ "WriteToFile", "class_object3_d.html#a1bbf03232d913d44086f85763fcf63dc", null ],
+    [ "Your_Size", "class_object3_d.html#aad6d4aa381a5511319b16a54fa937033", null ],
+    [ "_ID", "class_object3_d.html#af4880708db45894d21a9228d6bf568fa", null ],
+    [ "_name", "class_object3_d.html#a99bd86a8e03101d57a6a8f6f9445e228", null ],
+    [ "position", "class_object3_d.html#a4800b590e312c36ff0b674bbcf33c9be", null ],
+    [ "rotation", "class_object3_d.html#a8258e3a26b707151d426116a366530a5", null ]
+];

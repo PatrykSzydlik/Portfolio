@@ -1,0 +1,674 @@
+/*********************************************************
+Patryk Szydlik       indeks 248949       20.01.19r
+
+Przetwarzanie obrazow 2 - zawartosc:
+  - main2.c  - glowny kod, wywolania funkcji innych modulow
+  - main.h
+  - edit2.c - operacje edycji obrazu
+  - edit.h
+  - file2.c - dzialania na plikach
+  - file.h
+  - arg.c - interpretacja opcji i dzialania na tablicy dynamicznej i strukturach
+  - arg.h
+  - makefile
+
+Dostepne argumenty programu opisane w instrukcji.
+(wyswietlenie poprzez wywolanie opcji -h.)
+
+Testy programu znajduja sie pod kodem funkcji int main()
+
+************************************************************/
+
+#include "main.h" /* Zawiera stuktury, stałe wartości zwracanych, oraz kilka stałych używanych w wielu modułach*/
+#include "edit.h" /* Zawiera stałe wykorzystywane przy edycji oraz deklaracje funkcji edytujących*/
+#include "file.h" /* Zawiera stałe wykorzystywane przy operacjach na plikach oraz deklaracje tych funkcji*/
+#include "arg.h"  /* Zawiera deklaracje funkcji obsługujących zmienne dynamiczne oraz argumenty wywołania*/
+
+int main(int argc, char ** argv){
+  w_opcje wybor;
+  t_obraz obraz;
+  int error=0;        /*Zmienna do obslugi zwracanych wartosci bledow*/
+  int i=0;
+  inicjuj_obraz(&obraz);  /*inicjujemy strokture obrazu*/
+  error=przetwarzaj_opcje(argc,argv,&wybor);    /* Wywolanie funkcji pobierajacej argumenty*/
+  if(error){komunikat(error,&obraz,wybor.opcje);return error;}; /* Kontrola bledow*/
+/* Wyswietlenie instrukcji i zakonczenie pracy*/
+if(wybor.pomoc==1){
+  pomoc(argv[0]);
+  error=HELP;
+  komunikat(error,&obraz,wybor.opcje);
+  return WSZYSTKO_OK;
+};
+/* Odczytanie obrazu*/
+error=czytaj(wybor.plik_we,&obraz);
+if(error){komunikat(error,&obraz,wybor.opcje);return error;};   /* Kontrola bledow*/
+/* Na wypadek gdyby ktos chcial edytowac obraz kolorowy to poinformujemy go ze celem edycji zostanie skonwertowany*/
+ printf("%c\n",obraz.wariant[1]);
+if(obraz.wariant[1]=='3' ){
+  printf("true, %d\n",wybor.konwersja);
+  while(wybor.konwersja==0){
+    printf("ile");
+    if(wybor.opcje[i]!=WYSWIETLENIE && wybor.opcje[i]<0){
+      fprintf(stderr,"\n\n\
+      ******  UWAGA  ******\n\
+      Probowales edytowac obraz kolorowy!\n\
+      Jest to niemozliwe, dlatego program dokonal konwersji obrazu do szarosci.\n\n");
+      wybor.konwersja=1;
+  };
+     i++;
+  if(i==argc){wybor.konwersja=-1;};
+    
+};
+};
+if(wybor.konwersja==1){error=konwersja(&obraz);};
+for(i=0;i<argc;i++){
+if(error){komunikat(error,&obraz,wybor.opcje);return error;};
+/* Blok interpretacji opcji.*/
+if(wybor.opcje[i]==ROZMYCIEX){error=rozmycie(&obraz,wybor.opcje[i],wybor.promien);};
+if(wybor.opcje[i]==ROZMYCIEY){error=rozmycie(&obraz,wybor.opcje[i],wybor.promien);};
+if(wybor.opcje[i]==PROGOWANIE){error=progowanie(&obraz,wybor.prog);};
+if(wybor.opcje[i]==HISTOGRAM){ rozciaganie(&obraz);};
+if(wybor.opcje[i]==ZAMIANA){error=zamiana(&obraz,wybor.czern,wybor.biel);};
+if(wybor.opcje[i]==KONTUROWANIE){ error=konturowanie(&obraz);};
+if(wybor.opcje[i]==NEGATYW){ negatyw(&obraz);};
+if(wybor.opcje[i]==MASKA){error=maska(&obraz,wybor.wspolczynniki);};
+if(wybor.opcje[i]==WYSWIETLENIE){wyswietl(obraz);};
+}; /*koniec for */
+
+/* zapis do pliku */
+error=zapisz(wybor.plik_wy,obraz);
+if(error){komunikat(error,&obraz,wybor.opcje);return error;};
+/* zwolnienie pamieci alokowanej dynamicznie na obraz*/
+zwolnij(obraz.piksele, obraz.wymy);
+free(wybor.opcje);
+return WSZYSTKO_OK;
+}
+
+
+/******************************************************************************
+ TESTY
+
+
+
+CZESC 1
+SPRAWDZENIE ASERCJI ORAZ ZWROCONE KOMUNIKATY O BLEDACH
+
+
+1. Podanie niepoprawnej opcji
+
+Oczekiwane: Blad niepoprawnej opcji wywolania.
+
+IN:  -bash-3.2$ ./a.out h
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument h  Niepoprawna opcja
+      Error -1
+
+IN:   -bash-3.2$ ./a.out -i kubus.pgm -o nowy.pgm  d
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument d  Niepoprawna opcja
+      Error -1
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -f
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -fNiepoprawna opcja
+      Error -1
+
+
+
+2.Brak mazwy pliku wejsciowego lub pliku wyjsciowego
+
+Oczekiwane: Blad w przetwarzaniu opcji. Brak nazwy.
+
+IN:   -bash-3.2$ ./a.out -i -o
+OUT:   Plik: arg.c  Funkcja:  Przetwarzaj_opcje
+      Argument -iBrak nazwy pliku
+      Error -2
+
+IN:   -bash-3.2$ ./a.out -i
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -i  Brak nazwy pliku
+      Error -2
+
+IN:   -bash-3.2$ ./a.out -i -n
+OUT:  Plik: arg.c  Funkcja:  Przetwarzaj_opcje
+      Argument -iBrak nazwy pliku
+      Error -2
+
+IN:   -bash-3.2$ ./a.out -i kubus.pgm  -o
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -o  Brak nazwy pliku
+      Error -2
+
+IN:   -bash-3.2$ ./a.out -i kubus.pgm  -o -n
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -o  Brak nazwy pliku
+      Error -2
+
+3. Bledna wartosc progu lub brak wartosci programu lub wartosc spoza przedzialu
+
+IN:   -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -p k
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument k   Bledna wartosc argumentu
+      Error -5
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -p
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -p  Brak wymaganej wartosci
+      Error -3
+
+IN:   -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -p 105
+OUT:  Plik: edit2.c Funkcja: Progowanie Linia: 103
+      Bledna wartosc argumentu
+      Error -5
+
+4. Rozmycie. Zle wywolanie opcji. Brak promienia. Zla wartosc promienia. Za duzy promien.
+
+
+IN:   -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -r 6
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -r  Niepoprawna opcja
+      Error -1
+
+IN:   -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -rx
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -rx  Brak wymaganej wartosci
+      Error -3
+
+IN:   -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -rx k
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument k   Bledna wartosc argumentu
+      Error -5
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -rx 11
+OUT:  Plik: edit2.c Funkcja: Rozmycie Linia: 57
+      Bledna wartosc argumentu
+      Error -5
+
+
+5. Zamiana poziomow. Brak obu wartosci. Brak jednej wartosci. Jedna z wartosci zla.
+
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -z
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -z  Brak wymaganej wartosci
+      Error -3
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -z 4
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -z  Brak wymaganej wartosci
+      Error -3
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -z 4 k
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -z k   Bledna wartosc argumentu
+      Error -5
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -z -10 80
+OUT:  Plik: edit2.c Funkcja: Zamiana Linia: 231
+      Bledna wartosc argumentu
+      Error -5
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -z 10 120
+OUT:  Plik: edit2.c Funkcja: Zamiana Linia: 232
+      Bledna wartosc argumentu
+      Error -5
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -z 70 50
+OUT:  Plik: edit2.c Funkcja: Zamiana Linia: 232
+      Bledna wartosc argumentu
+      Error -5
+
+
+6. Operacja maski. Bledna wartosc jednego z argumentow. Brak jednego z argumentow.
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -m
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -m  Brak wymaganej wartosci
+      Error -3
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -m 1 2 3 4 5 6 7 8 k
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -m k Bledna wartosc argumentu
+      Error -5
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -m 1 2 3 4 k 6 7 8 9
+OUT:  Plik: arg.c Funkcja: Przetwarzaj_opcje
+      Argument -m k Bledna wartosc argumentu
+      Error -5
+
+
+7. Proba konwersji obrazu pgm
+
+IN:  -bash-3.2$ ./a.out -i kubus.pgm  -o kubus2.pgm -s
+OUT:  Plik: edit2.c Funkcja: Konwersja Linia: 185
+      Niepoprawny format obrazu!
+      Error -6
+
+8. Bledy alokacji pamieci
+
+Niestety nie jestem w stanie ich sprawdzic poniewaz jest to bardzo rzadka i skrajna sytuacja zalezna od systemu.
+
+9. Bledy wczytywania pliku
+
+IN:   -bash-3.2$ ./a.out -i nie_istnieje  -o kubus2.pgm -z 70 50
+OUT:  Plik: file2.c   Funkcja: czytaj   Linia: 33
+      Niepoprawne dowiazanie do pliku! Nie udalo sie go otworzyc.
+      Error -8
+
+a)  Brak wpisanego formatu. Najprawdopodbniej plik nie jest obrazem.
+
+* Stworzylem plik tekstowy nie_obraz w ktorym zapisalem tresc "\n\n\n #PUSTE \n"
+
+IN:  -bash-3.2$ emacs nie_obraz
+OUT:  -bash-3.2$ ./a.out -i nie_obraz  -o kubus2.pgm -z 70 50
+      Plik: file2.c   Funkcja: czytaj   Linia: 44
+      Niepoprawny format obrazu!
+      Error -6
+
+Tutaj zwrocony blad byl inny niz spodziewany. Oczekiwany byl blad 38 linii z komunikatem o pustym pliku.
+Udalo sie to naprawic, gdy plik byl rzeczywiscie calkowicie pusty bez zadnego znaku.
+
+IN:  -bash-3.2$ ./a.out -i nie_obraz  -o kubus2.pgm -z 70 50
+OUT:  Plik: file2.c   Funkcja: czytaj   Linia: 38
+      Plik, ktory probujesz wczytac jest pusty!
+      Error -7
+
+
+b) Niepoprawny format obrazu
+
+*Stworzylem plik tekstowy jakis_P7 i zapisalem w pierwszej linii "P7"
+
+IN:  -bash-3.2$ ./a.out -i jakis_p7  -o kubus2.pgm
+OUT:  Plik: file2.c   Funkcja: czytaj   Linia: 44
+      Niepoprawny format obrazu!
+      Error -6
+
+c) brak wymiarow
+
+*Uzyto tu pliki tekstowe stworzone przeze mnie
+"brakwymiarow" tresc: "P2\n"
+"1wymiar" tresc: "P2\n10"
+"2wymiary" tresc: "P2\n10 5"
+
+IN:  -bash-3.2$ ./a.out -i brakwymiarow  -o kubus2.pgm
+OUT:  Plik: file2.c   Funkcja: czytaj   Linia: 66
+      Brak wymaganej wartosci
+      Error -3
+
+IN:  -bash-3.2$ ./a.out -i 1wymiar  -o kubus2.pgm
+OUT:  Plik: file2.c   Funkcja: czytaj   Linia: 66
+      Brak wymaganej wartosci
+      Error -3
+
+IN:  -bash-3.2$ ./a.out -i 2wymiary -o kubus2.pgm
+OUT:  Plik: file2.c   Funkcja: czytaj   Linia: 66
+      Brak wymaganej wartosci
+      Error -3
+
+d) Ujemna wartosc ktoregos z wymiarow
+
+*Stworzylem plik:
+"ujemnawart" tresc: "P2\n10 -10 24"
+"ujemnawart2" tresc: "P2\n-10 10 24"
+"ujemnawart3" tresc: "P2\n10 10 -24"
+
+
+IN:  -bash-3.2$ ./a.out -i ujemnawart -o kubus2.pgm
+OUT:  Plik: file2.c   Funkcja: czytaj   Linia: 70
+       Bledna wartosc argumentu
+      Error -5
+
+IN:  -bash-3.2$ ./a.out -i ujemnawart2 -o kubus2.pgm
+OUT:  Plik: file2.c   Funkcja: czytaj   Linia: 70
+       Bledna wartosc argumentu
+      Error -5
+
+IN:  -bash-3.2$ ./a.out -i ujemnawart3 -o kubus2.pgm
+OUT:  Plik: file2.c   Funkcja: czytaj   Linia: 70
+       Bledna wartosc argumentu
+      Error -5
+
+CZESC 2
+EDYTOWANIE OBRAZOW
+
+*skorzystam z ponizej przedstawionych plikow testowych
+
+"obraz_1"
+
+P2
+12 12 255
+250 220 190 160 130 100 70 20 140 150 30 40
+220 190 160 130 100 70 80 30 150 160 40 50
+190 160 130 100 70 60 50 30 130 150 40 30
+160 130 100 70 40 60 50 20 120 140 30 20
+130 100 70 50 60 40 70 30 140 110 20 40
+100 70 60 70 80 30 50 20 120 130 30 40
+70 50 60 70 90 20 60 30 150 130 20 50
+60 50 70 80 80 30 60 20 140 130 30 20
+50 40 60 80 70 20 70 30 160 130 40 30
+60 50 70 80 90 30 70 20 150 120 20 30
+70 80 100 120 20 90 130 170 180 40 70 30
+90 80 120 140 40 110 150 220 210 50 60 20
+
+
+
+
+
+"obraz_2"
+
+P3
+#4
+4 12
+255
+250 220 190 160 130 100 70 20 140 150 30 40
+220 190 160 130 100 70 80 30 150 160 40 50
+190 160 130 100 70 60 50 30 130 150 40 30
+160 130 100 70 40 60 50 20 120 140 30 20
+130 100 70 50 60 40 70 30 140 110 20 40
+100 70 60 70 80 30 50 20 120 130 30 40
+70 50 60 70 90 20 60 30 150 130 20 50
+60 50 70 80 80 30 60 20 140 130 30 20
+50 40 60 80 70 20 70 30 160 130 40 30
+60 50 70 80 90 30 70 20 150 120 20 30 40
+70 80 100 120 20 90 130 170 180 40 70 30
+90 80 120 140 40 110 150 220 210 50 60 20
+
+
+
+1. Konwersja do szarosci obrazu2
+
+-bash-3.2$ ./a.out -i obraz_2 -s -o -
+P2
+4 12 255
+220 130 076 073 190 100 086 083 160 076 070 073 130 056 063 063 100 050
+080 056 076 060 063 066 060 060 080 066 060 063 073 060 050 056 086 066
+060 066 080 056 063 080 130 096 066 100 160 106
+
+2. Negatyw obraz_1
+
+-bash-3.2$ ./a.out -i obraz_1 -n -o -
+P2
+12 12 255
+005 035 065 095 125 155 185 235 115 105 225 215 035 065 095 125 155 185
+175 225 105 095 215 205 065 095 125 155 185 195 205 225 125 105 215 225
+095 125 155 185 215 195 205 235 135 115 225 235 125 155 185 205 195 215
+185 225 115 145 235 215 155 185 195 185 175 225 205 235 135 125 225 215
+185 205 195 185 165 235 195 225 105 125 235 205 195 205 185 175 175 225
+195 235 115 125 225 235 205 215 195 175 185 235 185 225 095 125 215 225
+195 205 185 175 165 225 185 235 105 135 235 225 185 175 155 135 235 165
+125 085 075 215 185 225 165 175 135 115 215 145 105 035 045 205 195 235
+
+3. Konturowanie obraz_1
+
+-bash-3.2$ ./a.out -i obraz_1 -k -o -
+P2
+12 12 255
+060 060 060 060 060 060 060 130 020 130 020 020 060 060 060 060 060 020
+080 120 030 130 010 030 060 060 060 060 040 010 020 110 030 120 020 020
+060 060 060 050 040 030 050 110 040 140 020 030 060 060 030 030 040 040
+060 120 050 110 030 020 060 030 010 010 060 030 040 110 040 100 020 020
+030 010 020 030 080 050 030 130 030 110 040 060 020 030 020 000 060 040
+050 130 030 100 020 020 020 030 030 010 070 060 040 140 040 100 030 010
+020 050 040 050 130 100 110 255 060 180 060 010 030 020 040 120 090 060
+060 060 170 040 050 050 030 040 040 120 090 060 090 060 190 020 050 050
+
+4. Progowanie obraz_1
+
+Prog wynosi 30%
+
+-bash-3.2$ ./a.out -i obraz_1 -p 30 -o -
+P2
+12 12 255
+255 255 255 255 255 255 000 000 255 255 000 000 255 255 255 255 255 000
+255 000 255 255 000 000 255 255 255 255 000 000 000 000 255 255 000 000
+255 255 255 000 000 000 000 000 255 255 000 000 255 255 000 000 000 000
+000 000 255 255 000 000 255 000 000 000 255 000 000 000 255 255 000 000
+000 000 000 000 255 000 000 000 255 255 000 000 000 000 000 255 255 000
+000 000 255 255 000 000 000 000 000 255 000 000 000 000 255 255 000 000
+000 000 000 255 255 000 000 000 255 255 000 000 000 255 255 255 000 255
+255 255 255 000 000 000 255 255 255 255 000 255 255 255 255 000 000 000
+
+
+Prog wynosi 70%
+
+-bash-3.2$ ./a.out -i obraz_1 -p 70 -o -
+P2
+12 12 255
+255 255 255 000 000 000 000 000 000 000 000 000 255 255 000 000 000 000
+000 000 000 000 000 000 255 000 000 000 000 000 000 000 000 000 000 000
+000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+000 000 255 000 000 000 000 000 000 000 000 000 000 255 255 000 000 000
+
+5. Zamiana poziomow obraz_1
+
+Czern wynosi 30% Biel 70%
+
+-bash-3.2$ ./a.out -i obraz_1 -z 30 70 -o -
+P2
+12 12 255
+255 255 255 255 135 060 000 000 160 255 000 000 255 255 255 135 060 000
+010 000 255 255 000 000 255 255 135 060 000 000 000 000 135 255 000 000
+255 135 060 000 000 000 000 000 110 160 000 000 135 060 000 000 000 000
+000 000 160 085 000 000 060 000 000 000 010 000 000 000 110 135 000 000
+000 000 000 000 035 000 000 000 255 135 000 000 000 000 000 010 010 000
+000 000 160 135 000 000 000 000 000 010 000 000 000 000 255 135 000 000
+000 000 000 010 035 000 000 000 255 110 000 000 000 010 060 110 000 035
+135 255 255 000 000 000 035 010 110 160 000 085 255 255 255 000 000 000
+
+
+Czern wynosi 40% Biel 90%
+
+-bash-3.2$ ./a.out -i obraz_1 -z 40 90 -o -
+P2
+12 12 255
+255 255 176 116 056 000 000 000 076 096 000 000 255 176 116 056 000 000
+000 000 096 116 000 000 176 116 056 000 000 000 000 000 056 096 000 000
+116 056 000 000 000 000 000 000 036 076 000 000 056 000 000 000 000 000
+000 000 076 016 000 000 000 000 000 000 000 000 000 000 036 056 000 000
+000 000 000 000 000 000 000 000 096 056 000 000 000 000 000 000 000 000
+000 000 076 056 000 000 000 000 000 000 000 000 000 000 116 056 000 000
+000 000 000 000 000 000 000 000 096 036 000 000 000 000 000 036 000 000
+056 136 156 000 000 000 000 000 036 076 000 016 096 255 216 000 000 000
+
+
+Czern wynosi 10% Biel 40%
+
+-bash-3.2$ ./a.out -i obraz_1 -z 10 40 -o -
+P2
+12 12 255
+255 255 255 255 255 255 255 000 255 255 016 049 255 255 255 255 255 255
+255 016 255 255 049 082 255 255 255 255 255 255 082 016 255 255 049 016
+255 255 255 255 049 255 082 000 255 255 016 000 255 255 255 082 255 049
+255 016 255 255 000 049 255 255 255 255 255 016 082 000 255 255 016 049
+255 082 255 255 255 000 255 016 255 255 000 082 255 082 255 255 255 016
+255 000 255 255 016 000 082 049 255 255 255 000 255 016 255 255 049 016
+255 082 255 255 255 016 255 000 255 255 000 016 255 255 255 255 000 255
+255 255 255 049 255 016 255 255 255 255 049 255 255 255 255 082 255 000
+
+6. Rozmycie obraz_1
+
+Rozmycie poziome o promieniu 1
+
+-bash-3.2$ ./a.out -i obraz_1 -rx 1 -o -
+P2
+12 12 255
+240 220 190 160 130 100 063 076 103 106 073 036 210 190 160 130 100 083
+060 086 113 116 083 046 180 160 130 100 076 060 046 070 103 106 073 033
+150 130 100 070 056 050 043 063 093 096 063 023 120 100 073 060 050 056
+046 080 093 090 056 033 090 076 066 070 060 053 033 063 090 093 066 036
+063 060 060 073 060 056 036 080 103 100 066 040 056 060 066 076 063 056
+036 073 096 100 060 023 046 050 060 070 056 053 040 086 106 110 066 033
+056 060 066 080 066 063 040 080 096 096 056 026 073 083 100 080 076 080
+130 160 130
+
+
+Rozmycie pionowe o promieniu 1
+
+-bash-3.2$ ./a.out -i obraz_1 -ry 1 -o -
+P2
+12 12 255
+240 210 180 150 120 090 073 023 143 153 033 043 220 190 160 130 100 076
+066 026 140 153 036 040 190 160 130 100 070 063 060 026 133 150 036 033
+160 130 100 073 056 053 056 026 130 133 030 030 130 100 076 063 060 043
+056 023 126 126 026 033 100 073 063 063 076 030 060 026 136 123 023 043
+076 056 063 073 083 026 056 023 136 130 026 036 060 046 063 076 080 023
+063 026 150 130 030 033 056 046 066 080 080 026 066 023 150 126 030 026
+060 056 076 093 060 046 090 073 163 096 043 030 073 070 096 113 050 076
+116 136 180
+
+
+Rozmycie poziome o promieniu 3
+
+-bash-3.2$ ./a.out -i obraz_1 -rx 3 -o -
+P2
+12 12 255
+224 198 177 160 127 115 110 091 078 085 062 068 194 168 147 135 108 102
+102 090 082 095 072 078 164 138 120 108 085 081 084 075 070 082 065 062
+134 108 094 087 067 065 071 065 062 074 055 052 105 087 074 074 060 065
+071 067 064 074 054 061 085 074 067 065 054 061 071 065 060 074 057 062
+065 062 060 060 054 068 078 071 065 081 060 071 062 062 062 061 055 068
+077 070 061 075 057 054 054 054 054 055 052 070 080 074 068 084 067 064
+062 064 064 064 058 072 080 071 062 075 054 058 082 078 082 087 101 115
+107 100 101 094 090 058 100 090 100 104 122 141 131 120 117 108 097 057
+
+7. Maska obraz_1
+
+maska 1 1 1 1 1 1 1 1 1
+
+-bash-3.2$ ./a.out -i obraz_1 -m 1 1 1 1 1 1 1 1 1 -o -
+P2
+12 12 255
+250 220 190 160 130 100 070 020 140 150 030 040 220 190 160 130 102 081
+056 077 106 110 076 050 190 160 130 100 077 064 050 073 103 106 073 030
+160 130 101 076 061 055 045 071 096 097 064 020 130 102 080 066 055 053
+041 068 092 093 062 040 100 078 066 067 056 055 038 074 095 094 063 040
+070 065 064 073 061 055 035 072 096 097 064 050 060 056 062 073 060 055
+037 080 102 103 064 020 050 056 064 075 062 057 038 080 100 102 061 030
+060 064 075 076 066 065 070 108 111 101 056 030 070 080 093 086 080 081
+110 144 128 100 048 030 090 080 120 140 040 110 150 220 210 050 060 020
+
+maska 0 0 0 0 -2 1 0 1 0   (konturowanie)
+
+./a.out -i obraz_1 -m 0 0 0 0 -2 1 0 1 0 -o -
+P2
+12 12 255
+227 200 173 145 118 091 063 018 127 136 027 036 200 000 000 000 000 000
+000 109 000 000 009 045 173 000 000 000 000 000 000 081 009 000 000 027
+145 000 000 000 036 000 000 100 036 000 000 018 118 000 000 027 000 018
+000 091 000 000 027 036 091 000 009 009 000 009 000 100 036 000 000 036
+063 009 018 027 000 045 000 100 000 000 036 045 054 009 000 000 000 018
+000 118 009 000 000 018 045 027 027 000 000 054 000 109 000 000 000 027
+054 045 036 045 000 091 009 255 000 000 054 027 063 018 036 000 081 054
+054 054 000 036 000 027 081 072 109 127 036 100 136 200 191 045 054 018
+
+
+maska 0 1 0 1 -4 1 0 1 0
+
+-bash-3.2$ ./a.out -i obraz_1 -m 0 1 0 1 -4 1 0 1 0 -o -
+P2
+12 12 255
+187 165 142 120 097 075 052 015 105 112 022 030 165 000 000 000 000 045
+000 120 000 000 090 037 142 000 000 000 015 007 015 082 000 000 067 022
+120 000 000 007 075 000 000 112 000 000 075 015 097 000 022 052 000 045
+000 097 000 000 097 030 075 022 022 000 000 052 000 112 000 000 067 030
+052 037 007 015 000 097 000 097 000 000 120 037 045 015 000 000 000 045
+000 135 000 000 067 015 037 037 015 000 000 090 000 112 000 000 037 022
+045 037 007 030 000 112 000 255 000 000 135 022 052 000 000 000 195 000
+000 000 000 195 000 022 067 060 090 105 030 082 112 165 157 037 045 015
+
+8. Rozciaganie histogramu
+
+-bash-3.2$ ./a.out -i obraz_1 -e -o -
+P2
+12 12 255
+255 221 188 155 121 088 055 000 133 144 011 022 221 188 155 121 088 055
+066 011 144 155 022 033 188 155 121 088 055 044 033 011 121 144 022 011
+155 121 088 055 022 044 033 000 110 133 011 000 121 088 055 033 044 022
+055 011 133 099 000 022 088 055 044 055 066 011 033 000 110 121 011 022
+055 033 044 055 077 000 044 011 144 121 000 033 044 033 055 066 066 011
+044 000 133 121 011 000 033 022 044 066 055 000 055 011 155 121 022 011
+044 033 055 066 077 011 055 000 144 110 000 011 055 066 088 110 000 077
+121 166 177 022 055 011 077 066 110 133 022 099 144 221 210 033 044 000
+
+
+CZESC 3
+
+MIESZANIE OPCJI EDYCJI PRZY WYKORZYSTANIU KOLEJKI WYKONYWANIA SIE OPERACJI
+
+1. Dla porownania operacja negatyw a potem konturowanie oraz operacje w odwrotnej kolejnosci
+ najpierw konturowanie a potem negatywu
+
+Negatyw a potem konturuj
+
+ -bash-3.2$ ./a.out -i obraz_1 -n -k -o -
+P2
+12 12 255
+060 060 060 060 060 060 060 130 020 130 020 020 060 060 060 060 060 020
+080 120 030 130 010 030 060 060 060 060 040 010 020 110 030 120 020 020
+060 060 060 050 040 030 050 110 040 140 020 030 060 060 030 030 040 040
+060 120 050 110 030 020 060 030 010 010 060 030 040 110 040 100 020 020
+030 010 020 030 080 050 030 130 030 110 040 060 020 030 020 000 060 040
+050 130 030 100 020 020 020 030 030 010 070 060 040 140 040 100 030 010
+020 050 040 050 130 100 110 255 060 180 060 010 030 020 040 120 090 060
+060 060 170 040 050 050 030 040 040 120 090 060 090 060 190 020 050 050
+
+
+Konturuj a potem negatyw
+
+-bash-3.2$ ./a.out -i obraz_1 -k -n -o -
+P2
+12 12 255
+195 195 195 195 195 195 195 125 235 125 235 235 195 195 195 195 195 235
+175 135 225 125 245 225 195 195 195 195 215 245 235 145 225 135 235 235
+195 195 195 205 215 225 205 145 215 115 235 225 195 195 225 225 215 215
+195 135 205 145 225 235 195 225 245 245 195 225 215 145 215 155 235 235
+225 245 235 225 175 205 225 125 225 145 215 195 235 225 235 255 195 215
+205 125 225 155 235 235 235 225 225 245 185 195 215 115 215 155 225 245
+235 205 215 205 125 155 145 000 195 075 195 245 225 235 215 135 165 195
+195 195 085 215 205 205 225 215 215 135 165 195 165 195 065 235 205 205
+
+
+2. Teraz moze rozciaganie histogramu a potem negatyw i na odwrot
+
+Rozciaganie histogramu a potem obliczenie negatywu
+
+-bash-3.2$ ./a.out -i obraz_1 -e -n -o -
+P2
+12 12 255
+000 034 067 100 134 167 200 255 122 111 244 233 034 067 100 134 167 200
+189 244 111 100 233 222 067 100 134 167 200 211 222 244 134 111 233 244
+100 134 167 200 233 211 222 255 145 122 244 255 134 167 200 222 211 233
+200 244 122 156 255 233 167 200 211 200 189 244 222 255 145 134 244 233
+200 222 211 200 178 255 211 244 111 134 255 222 211 222 200 189 189 244
+211 255 122 134 244 255 222 233 211 189 200 255 200 244 100 134 233 244
+211 222 200 189 178 244 200 255 111 145 255 244 200 189 167 145 255 178
+134 089 078 233 200 244 178 189 145 122 233 156 111 034 045 222 211 255
+
+
+Obliczenie negatywu a potem rozciaganie histogramu
+
+-bash-3.2$ ./a.out -i obraz_1 -n -e -o -
+P2
+12 12 255
+000 033 066 099 133 166 199 255 121 110 243 232 033 066 099 133 166 199
+188 243 110 099 232 221 066 099 133 166 199 210 221 243 133 110 232 243
+099 133 166 199 232 210 221 255 144 121 243 255 133 166 199 221 210 232
+199 243 121 155 255 232 166 199 210 199 188 243 221 255 144 133 243 232
+199 221 210 199 177 255 210 243 110 133 255 221 210 221 199 188 188 243
+210 255 121 133 243 255 221 232 210 188 199 255 199 243 099 133 232 243
+210 221 199 188 177 243 199 255 110 144 255 243 199 188 166 144 255 177
+133 088 077 232 199 243 177 188 144 121 232 155 110 033 044 221 210 255
+
+
+Widac tu minimalna roznice miedzy plikami wynikowymi.
+
+
+
+
+
+
+ ******************************************************************************/

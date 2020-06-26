@@ -1,0 +1,155 @@
+\hypertarget{random__data__generation_8hh}{}\doxysection{Dokumentacja pliku random\+\_\+data\+\_\+generation.\+hh}
+\label{random__data__generation_8hh}\index{random\_data\_generation.hh@{random\_data\_generation.hh}}
+
+
+Zawiera funkcje przygotowujące tablice losowych liczb do testow sortowania.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+Wykres zależności załączania dla random\+\_\+data\+\_\+generation.\+hh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{random__data__generation_8hh__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{random__data__generation_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\int \mbox{\hyperlink{random__data__generation_8hh_ac07417b71e50685ef8232edc5d7b308c}{check\+\_\+if\+\_\+sorted}} (D\+A\+T\+A\+T\+Y\+PE $\ast$test\+\_\+data, int amount\+\_\+of\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzająca czy tablica jest posortowana. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\D\+A\+T\+A\+T\+Y\+PE \mbox{\hyperlink{random__data__generation_8hh_aa642a525db3de95f79929a7485370547}{increasing\+\_\+\+R\+NG}} (D\+A\+T\+A\+T\+Y\+PE last\+\_\+value, D\+A\+T\+A\+T\+Y\+PE difference)
+\begin{DoxyCompactList}\small\item\em Funkcja losująca kolejną liczbę po last\+\_\+value większą o maksymalnie difference. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\D\+A\+T\+A\+T\+Y\+PE \mbox{\hyperlink{random__data__generation_8hh_a9c4423dd97f91ace4a889bc018d5e8f7}{limited\+\_\+\+R\+NG}} (D\+A\+T\+A\+T\+Y\+PE lowest\+\_\+value, D\+A\+T\+A\+T\+Y\+PE highest\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Funkcja losująca liczbę z przedziału lowest\+\_\+value -\/ highest\+\_\+value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\void \mbox{\hyperlink{random__data__generation_8hh_a04fa5c2266c0e4217d928e7910651541}{generate\+\_\+test\+\_\+data}} (D\+A\+T\+A\+T\+Y\+PE $\ast$$\ast$test\+\_\+data\+\_\+ptr, int amount\+\_\+of\+\_\+data, float percent\+\_\+already\+\_\+sorted)
+\begin{DoxyCompactList}\small\item\em Funkcja generująca tablicę losowych liczb. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ }\\void \mbox{\hyperlink{random__data__generation_8hh_afb2609df05439eea1bb51a573f6d37be}{generate\+\_\+test\+\_\+data}} (D\+A\+T\+A\+T\+Y\+PE $\ast$$\ast$test\+\_\+data\+\_\+ptr, int amount\+\_\+of\+\_\+data, int percent\+\_\+already\+\_\+sorted, D\+A\+T\+A\+T\+Y\+PE bottom\+\_\+limit, D\+A\+T\+A\+T\+Y\+PE top\+\_\+limit)
+\begin{DoxyCompactList}\small\item\em Funkcja generująca tablicę losowych liczb z ograniczeniami. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Patryk Szydlik 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+12.\+03.\+2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{random__data__generation_8hh_ac07417b71e50685ef8232edc5d7b308c}\label{random__data__generation_8hh_ac07417b71e50685ef8232edc5d7b308c}} 
+\index{random\_data\_generation.hh@{random\_data\_generation.hh}!check\_if\_sorted@{check\_if\_sorted}}
+\index{check\_if\_sorted@{check\_if\_sorted}!random\_data\_generation.hh@{random\_data\_generation.hh}}
+\doxysubsubsection{\texorpdfstring{check\_if\_sorted()}{check\_if\_sorted()}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+int check\+\_\+if\+\_\+sorted (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE $\ast$}]{test\+\_\+data,  }\item[{int}]{amount\+\_\+of\+\_\+data }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em test\+\_\+data} & -\/ tablica do sprawdzenia \\
+\hline
+\mbox{\texttt{ in}}  & {\em amount\+\_\+of\+\_\+data} & -\/ rozmiar tablicy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Ilość wystąpień błędnej kolejności elementów 
+\end{DoxyReturn}
+
+
+Definicja w linii 19 pliku random\+\_\+data\+\_\+generation.\+hh.
+
+\mbox{\Hypertarget{random__data__generation_8hh_a04fa5c2266c0e4217d928e7910651541}\label{random__data__generation_8hh_a04fa5c2266c0e4217d928e7910651541}} 
+\index{random\_data\_generation.hh@{random\_data\_generation.hh}!generate\_test\_data@{generate\_test\_data}}
+\index{generate\_test\_data@{generate\_test\_data}!random\_data\_generation.hh@{random\_data\_generation.hh}}
+\doxysubsubsection{\texorpdfstring{generate\_test\_data()}{generate\_test\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+void generate\+\_\+test\+\_\+data (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE $\ast$$\ast$}]{test\+\_\+data\+\_\+ptr,  }\item[{int}]{amount\+\_\+of\+\_\+data,  }\item[{float}]{percent\+\_\+already\+\_\+sorted }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em test\+\_\+data\+\_\+ptr} & -\/ wskaźnik na wskaźnik będący początkiem tablicy \\
+\hline
+\mbox{\texttt{ in}}  & {\em amount\+\_\+of\+\_\+data} & -\/ rozmiar tablicy \\
+\hline
+\mbox{\texttt{ in}}  & {\em percent\+\_\+already\+\_\+sorted} & -\/ procent danych, który ma być posortowany \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 70 pliku random\+\_\+data\+\_\+generation.\+hh.
+
+\mbox{\Hypertarget{random__data__generation_8hh_afb2609df05439eea1bb51a573f6d37be}\label{random__data__generation_8hh_afb2609df05439eea1bb51a573f6d37be}} 
+\index{random\_data\_generation.hh@{random\_data\_generation.hh}!generate\_test\_data@{generate\_test\_data}}
+\index{generate\_test\_data@{generate\_test\_data}!random\_data\_generation.hh@{random\_data\_generation.hh}}
+\doxysubsubsection{\texorpdfstring{generate\_test\_data()}{generate\_test\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+void generate\+\_\+test\+\_\+data (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE $\ast$$\ast$}]{test\+\_\+data\+\_\+ptr,  }\item[{int}]{amount\+\_\+of\+\_\+data,  }\item[{int}]{percent\+\_\+already\+\_\+sorted,  }\item[{D\+A\+T\+A\+T\+Y\+PE}]{bottom\+\_\+limit,  }\item[{D\+A\+T\+A\+T\+Y\+PE}]{top\+\_\+limit }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em test\+\_\+data\+\_\+ptr} & -\/ wskaźnik na wskaźnik będący początkiem tablicy \\
+\hline
+\mbox{\texttt{ in}}  & {\em amount\+\_\+of\+\_\+data} & -\/ rozmiar tablicy \\
+\hline
+\mbox{\texttt{ in}}  & {\em percent\+\_\+already\+\_\+sorted} & -\/ procent danych, który ma być posortowany \\
+\hline
+\mbox{\texttt{ in}}  & {\em bottom\+\_\+limit} & -\/ najmniejsza dopuszczalna wartośc liczb \\
+\hline
+\mbox{\texttt{ in}}  & {\em top\+\_\+limit} & -\/ największa dopuszczalna wartość liczb \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 101 pliku random\+\_\+data\+\_\+generation.\+hh.
+
+\mbox{\Hypertarget{random__data__generation_8hh_aa642a525db3de95f79929a7485370547}\label{random__data__generation_8hh_aa642a525db3de95f79929a7485370547}} 
+\index{random\_data\_generation.hh@{random\_data\_generation.hh}!increasing\_RNG@{increasing\_RNG}}
+\index{increasing\_RNG@{increasing\_RNG}!random\_data\_generation.hh@{random\_data\_generation.hh}}
+\doxysubsubsection{\texorpdfstring{increasing\_RNG()}{increasing\_RNG()}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+D\+A\+T\+A\+T\+Y\+PE increasing\+\_\+\+R\+NG (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE}]{last\+\_\+value,  }\item[{D\+A\+T\+A\+T\+Y\+PE}]{difference }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em last\+\_\+value} & -\/ poprzednia wartość losowa \\
+\hline
+\mbox{\texttt{ in}}  & {\em difference} & -\/ maksymalny wzrost nowej wartości od poprzedniej \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Nowo wylosowana liczba 
+\end{DoxyReturn}
+
+
+Definicja w linii 34 pliku random\+\_\+data\+\_\+generation.\+hh.
+
+\mbox{\Hypertarget{random__data__generation_8hh_a9c4423dd97f91ace4a889bc018d5e8f7}\label{random__data__generation_8hh_a9c4423dd97f91ace4a889bc018d5e8f7}} 
+\index{random\_data\_generation.hh@{random\_data\_generation.hh}!limited\_RNG@{limited\_RNG}}
+\index{limited\_RNG@{limited\_RNG}!random\_data\_generation.hh@{random\_data\_generation.hh}}
+\doxysubsubsection{\texorpdfstring{limited\_RNG()}{limited\_RNG()}}
+{\footnotesize\ttfamily template$<$typename D\+A\+T\+A\+T\+Y\+PE $>$ \\
+D\+A\+T\+A\+T\+Y\+PE limited\+\_\+\+R\+NG (\begin{DoxyParamCaption}\item[{D\+A\+T\+A\+T\+Y\+PE}]{lowest\+\_\+value,  }\item[{D\+A\+T\+A\+T\+Y\+PE}]{highest\+\_\+value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em lowest\+\_\+value} & -\/ najmniejsza wartość do wylosowania \\
+\hline
+\mbox{\texttt{ in}}  & {\em highest\+\_\+value} & -\/ największa wartość do wylosowania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Nowo wylosowana liczba 
+\end{DoxyReturn}
+
+
+Definicja w linii 51 pliku random\+\_\+data\+\_\+generation.\+hh.
+

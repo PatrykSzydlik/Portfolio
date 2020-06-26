@@ -1,0 +1,12 @@
+START OF PROGRAM 
+Repetition 1 
+  Generating data set : nV=500 full=100% start=0 
+  List based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/L_1_results.txt 
+  Matrix based graph 
+    Loading graph 
+    Dijkstra alghoritm - finding paths 
+    Displaying route in file ./routes/M_1_results.txt 
+END OF PROGRAM 
